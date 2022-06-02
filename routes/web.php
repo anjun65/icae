@@ -15,7 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/technical-program-committe', function () {
+    return view('committes');
+})->name('technical');
+
+Route::get('/accepted-paper', function () {
+    return view('accepted-paper');
+})->name('paper');
+
+Route::get('/virtual-conference', function () {
+    return view('welcome');
+})->name('conference');
 
 Route::middleware([
     'auth:sanctum',
