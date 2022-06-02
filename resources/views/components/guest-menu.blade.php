@@ -30,12 +30,9 @@
                 </div>
             </div>
 
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
-                <x-jet-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')" class="px-10">
-                        {{ __('Register') }}
-                </x-jet-nav-link>
-                
-            </div>
+            <x-jet-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
+                    {{ __('Register') }}
+            </x-jet-nav-link>
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
