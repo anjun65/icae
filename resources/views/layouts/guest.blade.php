@@ -24,4 +24,6 @@
             {{ $slot }}
         </div>
     </body>
+
+    @stack('addon-scripts')
 </html>
