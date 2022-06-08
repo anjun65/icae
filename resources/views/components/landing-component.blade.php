@@ -20,12 +20,7 @@
           </h1>
           <p class="my-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Responsing the Metaverse era for future applied technology.</p>
           <p>
-            <div class="timer" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
-              <h1 x-text="time().days"></h1>
-              <h1 x-text="time().hours"></h1>
-              <h1 x-text="time().minutes"></h1>
-              <h1 x-text="time().seconds"></h1>
-            </div>
+            
           </p>
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
@@ -56,7 +51,7 @@
     </div>
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/banner-new.jpg" alt="">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/banner-new.png" alt="">
   </div>
 
   
