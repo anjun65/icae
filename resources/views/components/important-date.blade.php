@@ -18,10 +18,10 @@
                 <tbody>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                            Submission Deadline
+                            Paper Submission
                         </th>
                         <td class="px-6 py-4">
-                            August 31, 2022
+                            29 July 2022
                         </td>
                     </tr>
 
@@ -30,25 +30,16 @@
                             Acceptance Notification & Revised Article
                         </th>
                         <td class="px-6 py-4">
-                            September 25, 2022
+                            24 August 2022
                         </td>
                     </tr>
 
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                            Final Manuscript
+                            Paper Revision and Registration
                         </th>
                         <td class="px-6 py-4">
-                            September 30, 2022
-                        </td>
-                    </tr>
-
-                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
-                            Deadline of Registration and Payment
-                        </th>
-                        <td class="px-6 py-4">
-                            Early Bird : September 30, 2022<br/>Final payment : October 06, 2022
+                            21 September 2022
                         </td>
                     </tr>
 
@@ -57,7 +48,7 @@
                             Conference
                         </th>
                         <td class="px-6 py-4">
-                            13-14 October 2022
+                            5 October 2022
                         </td>
                     </tr>
                 </tbody>
