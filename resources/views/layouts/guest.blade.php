@@ -25,5 +25,6 @@
         </div>
     </body>
 
+    <x-footer></x-footer>
     @stack('addon-scripts')
 </html>
