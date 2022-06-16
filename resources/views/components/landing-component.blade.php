@@ -19,6 +19,32 @@
             <span class="block text-indigo-600 xl:inline">CONFERENCE ON ENGINEERING</span>
           </h1>
           <p class="my-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Responsing the Metaverse era for future applied technology.</p>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:0;"></span>
+    </span>
+    days
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:0;"></span>
+    </span>
+    hours
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:0;"></span>
+    </span>
+    min
+  </div> 
+  <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+    <span class="countdown font-mono text-5xl">
+      <span style="--value:0;"></span>
+    </span>
+    sec
+  </div>
+</div>
           <p>
             
           </p>
@@ -51,7 +77,7 @@
     </div>
   </div>
   <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/vr.png" alt="">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="img/new_banner.png" alt="">
   </div>
 
   
