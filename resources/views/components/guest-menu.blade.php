@@ -30,9 +30,9 @@
                 </div>
             </div>
 
-            <x-jet-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
+            {{-- <x-jet-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
                     {{ __('Register') }}
-            </x-jet-nav-link>
+            </x-jet-nav-link> --}}
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
@@ -65,9 +65,9 @@
                 {{ __('Virtual Conference') }}
             </x-jet-responsive-nav-link>
 
-            <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
+            {{-- <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
                 {{ __('Register') }}
-            </x-jet-responsive-nav-link>
+            </x-jet-responsive-nav-link> --}}
         </div>
     </div>
 </nav>
