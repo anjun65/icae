@@ -27,7 +27,7 @@ Route::get('/accepted-paper', function () {
 })->name('paper');
 
 Route::get('/virtual-conference', function () {
-    return view('welcome');
+    return view('virtual-conference');
 })->name('conference');
 
 Route::middleware([
