@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       
       <div>
-        <div class="card w-96 bg-base-100 shadow-xl h-full">
+        <div class="card w-full bg-base-100 shadow-xl h-full">
           <div class="card-body">
             <h2 class="font-bold text-center">EARLY BIRD</h2>
             <b>For The Fast One</b>
@@ -29,7 +29,7 @@
       
       
       <div>
-        <div class="card w-96 bg-base-100 shadow-xl h-full">
+        <div class="card w-full bg-base-100 shadow-xl h-full">
           <div class="card-body">
             <h2 class="font-bold text-center">EARLY BIRD</h2>
             <b>For The Fast One</b>
@@ -52,7 +52,7 @@
       </div>
 
       <div>
-        <div class="card w-96 bg-base-100 shadow-xl h-full">
+        <div class="card w-full bg-base-100 shadow-xl h-full">
           <div class="card-body">
             <h2 class="font-bold text-center">MISCELLANEOUS</h2>
             <p>

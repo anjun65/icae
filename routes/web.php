@@ -17,10 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/register', function () {
+    return view('404');
+})->name('register');
+
+Route::get('/login', function () {
+    return view('404');
+})->name('login');
 
 Route::get('/technical-program-committe', function () {
     return view('committes');
 })->name('technical');
+
+Route::get('/local-committes', function () {
+    return view('local-committes');
+})->name('local');
 
 Route::get('/accepted-paper', function () {
     return view('accepted-paper');

@@ -23,7 +23,7 @@
                 <li>Audio Quality: please double check your files before submitting to make sure the audio is clear and audible!</li>
              </p>
             <br/>
-            All accepted papers will be presented in parallel sessions on October 13-14, 2022.
+            All accepted papers will be presented in parallel sessions on October 5, 2022.
             <br/><b>Q&A sessions:</b><br/>
             Following the presentations, authors required to be on-line to address Q&A moderated by the Session Chair.
 

@@ -4,8 +4,6 @@
             
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                {{-- <h2 class="pt-4 text-2xl font-extrabold tracking-tight text-center text-gray-900">THE 4TH INTERNATIONAL CONFERENCE</h2>
-                    <h2 class="pb-4 text-2xl font-extrabold tracking-tight text-center text-gray-900">ON APPLIED ENGINEERING</h2> --}}
                 <br/>
                 <div class="bg-gray-50">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
