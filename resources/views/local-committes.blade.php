@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <body class="antialiased bg-gray-100 dark:bg-gray-900">
+    <body class="antialiased bg-gray-100">
         <div class="relative items-top justify-center min-h-screen mb-6">
             
 
