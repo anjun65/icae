@@ -18,7 +18,7 @@
 
       <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         <div class="sm:text-center lg:text-left">
-          <p class="my-3 text-lg sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Politeknik Negeri Batam, Indonesia  - 5 October 2022</p>
+          <p class="my-3 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 sm:text-base md:text-xl lg:mx-0">Politeknik Negeri Batam, Indonesia  - 5 October 2022</p>
 
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
             <span class="block xl:inline">THE 5TH INTERNATIONAL</span>
