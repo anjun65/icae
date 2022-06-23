@@ -1,7 +1,7 @@
 <footer class="footer p-10 bg-neutral text-neutral-content">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <img src="img/logo-wh.png" alt="" class="">
-        <p>International Conference on Applied Engineering (ICAE 2021).<br/> his conference aim is to showcase research applications conducted by researchers.<br/> Research gap between academic and industries has become a major challenge<br/> which is expected to be addressed during the conference.</p>
+        <p>International Conference on Applied Engineering (ICAE 2022).<br/> his conference aim is to showcase research applications conducted by researchers.<br/> Research gap between academic and industries has become a major challenge<br/> which is expected to be addressed during the conference.</p>
         </div> 
         
         <div>

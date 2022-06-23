@@ -7,7 +7,7 @@
             
             <div class="w-full lg:w-1/2">
                 <h1 class="py-4 text-2xl font-extrabold text-gray-800">Submission Type: Full Paper</h1>
-                <p class="py-4 text-base text-gray-800">Authors are invited to submit Paper must be using IEEE Paper format, to download IEEE Paper format template:<br/>IEEE Conference Template Doc or latex template</p>
+                <p class="py-4 text-base text-gray-800">Authors are invited to submit Paper must be using IEEE Paper format, to download IEEE Paper format template:<br/><a href="Conference-template-A4-IEEE.doc" target="_blank"><b>IEEE Conference Template Doc</b></a> or <a href="doc/conference-latex-template_IEEE.zip" target="_blank"><b>latex template</b></a></p>
                 <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION</b> via <b><a href="https://edas.info/" target="_blank" >EDAS</a> </b></p>
                 <a href="https://edas.info/" target="_blank" ><img src="img/edas.png" alt="" class="h-16 w-auto mb-4"></a>
 
@@ -18,7 +18,7 @@
                 <thead>
                     <tr tabindex="0" class="focus:outline-none h-16 w-full text-sm leading-none bg-gray-50  text-gray-800">
                         <th class="font-normal text-left pl-4">Event</th>
-                        <th class="font-normal text-left pl-12">Date</th>
+                        <th class="font-normal text-left p-6">Date</th>
                     </tr>
                 </thead>
                 <tbody class="w-full">
@@ -30,10 +30,13 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="pl-12">
-                            <p class="text-sm font-medium leading-none text-gray-800">29 July 2022</p>
+                        <td class="p-6">
+                            <p class="text-sm font-medium leading-none text-gray-800">8 August 2022</p>
                         </td>
                     </tr>
+
+                    
+
 
                     <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
@@ -43,8 +46,21 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="pl-12">
+                        <td class="p-6">
                             <p class="text-sm font-medium leading-none text-gray-800">24 August 2022</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Video Submission</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="p-6">
+                            <p class="text-sm font-medium leading-none text-gray-800">21 September 2022</p>
                         </td>
                     </tr>
 
@@ -56,7 +72,7 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="pl-12">
+                        <td class="p-6">
                             <p class="text-sm font-medium leading-none text-gray-800">21 September 2022</p>
                         </td>
                     </tr>
@@ -69,7 +85,7 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="pl-12">
+                        <td class="p-6">
                             <p class="text-sm font-medium leading-none text-gray-800">5 October 2022</p>
                         </td>
                     </tr>

@@ -9,7 +9,7 @@
             <div class="grid gap-8 mt-10 md:mt-20 md:grid-cols-3">
                 <div class="card w-full pl-2 bg-base-100 shadow-xl">
                     <div class="card-body">
-                        <h2 class="card-title font-bold">MECHANICAL TRACK</h2>
+                        <h2 class="card-title font-bold">MECHANICALS TRACK</h2>
                         <ol style="list-style-type: disc;">
                             <li>Control Systems and Mechanical Engineering</li>
                             <li>Aerodynamics</li>
@@ -26,7 +26,7 @@
                             <li>Mechanical Power Engineering</li>
                             <li>Nanomaterial Engineering</li>
                             <li>New and Renewable Energy</li>
-                            <li>Pc Guided Design and Manufacture</li>
+                            <li>Computer Guided System</li>
                             <li>Plasticity Mechanics</li>
                             <li>Pollution and Environmental Engineering</li>
                             <li>Power-train Solutions</li>
@@ -52,7 +52,7 @@
 
                 <div class="card w-full pl-2 bg-base-100 shadow-xl">
                     <div class="card-body">
-                        <h2 class="card-title font-bold">ELECTONIC TRACK</h2>
+                        <h2 class="card-title font-bold">ELECTRONICS TRACK</h2>
                         <ol style="list-style-type: disc;">
                             <li>Bio-medical Electronics</li>
                             <li>Electrical and Magnetic Recordings</li>
@@ -83,7 +83,6 @@
                             <li>Head Mounted Display</li>
                             <li>Speech recognition and generation</li>
                             <li>Sensor and actuator</li>
-                            <li>Medical Electronics</li>
                             
 
                         </ol>
@@ -92,7 +91,7 @@
 
                 <div class="card w-full pl-2 bg-base-100 shadow-xl">
                     <div class="card-body">
-                        <h2 class="card-title font-bold">INFORMATIC TRACK</h2>
+                        <h2 class="card-title font-bold">INFORMATICS TRACK</h2>
                         <ol style="list-style-type: disc;">
                             <li>Soft Computing</li>
                             <li>Ubiquitous Computing</li>

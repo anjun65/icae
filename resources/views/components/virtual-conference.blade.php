@@ -7,7 +7,7 @@
             </p>
             
             <p class="text-2xl py-4 text-red-600">
-                The deadline for all video submissions is September 10, 2022!
+                The deadline for all video submissions is September 21, 2022!
             </p>  
 
             <p class="text-2xl pb-4">
@@ -15,7 +15,7 @@
             </p>  
             
             <p>
-                Talks will be pre-recorded and submitted as video files before September 19, 2022 to be replayed during the conference. Instructions on how authors can submit their video files are found below. During the actual presentation on October 13 - 14, 2022, authors will need to be available online after their videos are played to answer Q&A from conference participants moderated by the respective Session Moderators.
+                Talks will be pre-recorded and submitted as video files before September 21, 2022 to be replayed during the conference. Instructions on how authors can submit their video files are found below. During the actual presentation on October 5, 2022, authors will need to be available online after their videos are played to answer Q&A from conference participants moderated by the respective Session Moderators.
                 <br/>
                 <li>Duration of video files: 10 - 12 minutes</li>
                 <li>File Format: MPEG-4 (.mp4) file (use the normal H.264 video and AAC audio codecs)</li>

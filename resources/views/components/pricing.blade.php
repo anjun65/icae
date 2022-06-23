@@ -1,7 +1,7 @@
 <div>
 <div class="bg-white text-center">
   <div class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 m-auto">
-    <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Pricing</h2>
+    <h2 class="text-2xl font-extrabold tracking-tight text-gray-900">Registration Fee</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       
       <div>
@@ -31,8 +31,8 @@
       <div>
         <div class="card w-full bg-base-100 shadow-xl h-full">
           <div class="card-body">
-            <h2 class="font-bold text-center">EARLY BIRD</h2>
-            <b>For The Fast One</b>
+            <h2 class="font-bold text-center">Late Registration</h2>
+            <br/>
               <li>International Regular	USD 175</li>
               <li>Indonesia Regular	Rp. 1.500.000</li>
               <li>International Student	USD 120</li>
