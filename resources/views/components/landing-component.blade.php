@@ -1,9 +1,7 @@
 <div class="min-h-screen relative bg-white overflow-hidden">
   
   <div class="max-w-7xl mx-auto">
-    {{-- <div class="absolute -left-2 -translate-y-12 pointer-events-none md:left-[25%]" style="z-index:100">
-      <img src="img/coins.png" alt="" class="src">
-    </div> --}}
+    
     <div class="md:min-h-screen relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
       <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="50,0 100,0 50,100 0,100" />
@@ -22,11 +20,11 @@
 
           <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
             <span class="block xl:inline">THE 5TH INTERNATIONAL</span>
-            <span class="block text-indigo-600 xl:inline">CONFERENCE ON APPLIED ENGINEERING</span>
+            <span class="block text-indigo-600 xl:inline">CONFERENCE ON APPLIED ENGINEERING (ICAE)</span>
           </h1>
 
           
-          <p class="my-3 text-2xl text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-3xl lg:mx-0">Responsing the Metaverse Era for Future Applied Technology.</p>
+          <p class="my-3 text-2xl uppercase text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-3xl lg:mx-0">Responsing the Metaverse Era for Future Applied Technology.</p>
           
           
 
