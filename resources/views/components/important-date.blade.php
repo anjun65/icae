@@ -8,7 +8,7 @@
             <div class="w-full lg:w-1/2">
                 <h1 class="py-4 text-2xl font-extrabold text-gray-800">Submission Type: Full Paper</h1>
                 <p class="py-4 text-base text-gray-800">Authors are invited to submit Paper must be using IEEE Paper format, to download IEEE Paper format template:<br/><a href="doc/Conference-template-A4-IEEE.doc" target="_blank"><b>IEEE Conference Template Doc</b></a> or <a href="doc/conference-latex-template_IEEE.zip" target="_blank"><b>latex template</b></a></p>
-                <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION</b> via <b><a href="https://edas.info/N29938" target="_blank" >EDAS</a> </b></p>
+                <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b><a href="https://edas.info/N29938" target="_blank" >EDAS</a> </b></p>
                 <a href="https://edas.info/N29938" target="_blank" ><img src="img/edas.png" alt="" class="h-16 w-auto mb-4"></a>
 
             </div>

@@ -9,12 +9,12 @@
           <div class="card-body">
             <h2 class="font-bold text-center">EARLY BIRD</h2>
             <b>For The Fast One</b>
-              <li>International Regular	USD 120</li>
-              <li>Indonesia Regular	Rp. 1.200.000</li>
-              <li>International Student	USD 100</li>
-              <li>Indonesia Student	Rp. 800.000</li>
-              <li>Poster Regular	USD 50 (Rp. 500.000)</li>
-              <li>Poster Student	USD 30 (Rp. 300.000)</li>
+              <li>International Regular	USD 90</li>
+              <li>Indonesia Regular	Rp. 900.000</li>
+              <li>International Student	USD 60</li>
+              <li>Indonesia Student	Rp. 600.000</li>
+              <li>Poster Regular USD 30 (Rp. 300.000)</li>
+              <li>Poster Student USD 20 (Rp. 200.000)</li>
             </p>
             <div class="card-actions justify-center">
             
