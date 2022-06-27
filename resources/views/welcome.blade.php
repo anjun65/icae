@@ -6,6 +6,6 @@
     {{-- <x-speaker></x-speaker> --}}
     
     <x-important-date></x-important-date>
-    {{-- <x-pricing></x-pricing> --}}
+    <x-pricing></x-pricing>
 
 </x-guest-layout>
