@@ -148,7 +148,7 @@
             for (var i = 0; i < 2; i++) {
               zero += "0";
             }
-            return (zero + num).slice(-3);
+            return (zero + num).slice(-2);
           },
         };
       }
