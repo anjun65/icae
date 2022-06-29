@@ -41,6 +41,10 @@ Route::get('/virtual-conference', function () {
     return view('virtual-conference');
 })->name('conference');
 
+Route::get('/404', function () {
+    return view('404');
+})->name('404');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

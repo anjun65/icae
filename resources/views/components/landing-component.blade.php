@@ -82,7 +82,7 @@
           
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <a href="https://ieeexplore.ieee.org/xpl/conhome/9350316/proceeding" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-sm md:px-10">ICAE Proceeding 2021 </a>
+              <a href="{{ route('404') }}" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-sm md:px-10">ICAE Proceeding 2021 </a>
             </div>
           </div>
         </div>
