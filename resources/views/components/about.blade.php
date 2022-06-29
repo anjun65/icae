@@ -7,7 +7,7 @@
             <p class="mt-4 text-lg text-gray-600 text-justify">Who can deny the fact that the Metaverse is taking the world by storm? Ready or not, the metaverse will change the world right now, for the next decade. Every day, the Metaverse opens up new opportunities for collaboration and interaction.
             With the development of deep learning technology, natural generation models, VR/AR/MR/XR technology, along with 5G and WiFi6 communication technologies, Metaverse is strengthened by a variety of factors, from mobile-based always connected, to virtual currency for meta-economics.<br/><br/> Without the limitations of space-time, the Metaverse offers us endless possibilities.
             There are also many opportunities to develop technologies that supports metaverse, like the electronic components, the mechanical system, the applications program, and the implementation in business. We invite you to ICAE/ICAESS 2022 to discuss about this very opportunities. <b style="color:rgb(79 70 229);">We look forward to meeting you at ICAE/ICAESS 2022!</b></p>
-            <p class="mt-4 text-lg text-gray-600 text-center">Topic of Interest Include (but are not limited):</p>
+            <h2 class="text-2xl mt-5 text-center font-extrabold tracking-tight text-gray-900">Topic of Interest Include (but are not limited):</h2>
 
             <div class="grid gap-8 mt-5 md:mt-5 md:grid-cols-3">
                 <div class="card w-full pl-2 shadow-xl">
