@@ -8,11 +8,11 @@ use App\Http\Livewire\DataTable\WithCachedRows;
 use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
 use Livewire\WithFileUploads;
-use App\Models\Paper as PaperModel;
+use App\Models\Payment;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 
-class Paper extends Component
+class PaymentProof extends Component
 {
     use WithPerPagePagination, WithSorting, WithBulkActions, WithCachedRows, WithFileUploads;
 
@@ -20,14 +20,16 @@ class Paper extends Component
     public $showEditModal = false;
     public $showFilters = false;
     public $filters = [
-        'link_video' => '',
-        'paper_code' => '',
-        'paper_title' => '',
-        'presenter_name' => '',
-        'vita_presenter' => '',
+        'file' => '',
+        'tanggal' => '',
+        'approval_status' => '',
+        'verification_status' => '',
+        'file_invoice' => '',
+        'tanggal_transfer' => '',
+        'nominal_transfer' => '',
     ];
     
-    public PaperModel $editing;
+    public Payment $editing;
 
     public $upload;
 
@@ -36,11 +38,13 @@ class Paper extends Component
     protected $listeners = ['refreshTransactions' => '$refresh'];
 
     public function rules() { return [
-        'editing.paper_code' => 'required',
-        'editing.paper_title' => 'required',
-        'editing.link_video' => 'required',
-        'editing.presenter_name' => 'required',
-        'editing.vita_presenter' => 'required',
+        'editing.file' => 'required',
+        'editing.tanggal' => 'required',
+        'editing.approval_status' => 'required',
+        'editing.verification_status' => 'required',
+        'editing.file_invoice' => 'required',
+        'editing.tanggal_transfer' => 'required',
+        'editing.nominal_transfer' => 'required',
     ]; }
 
     public function mount() { $this->editing = $this->makeBlankTransaction(); }
@@ -60,7 +64,7 @@ class Paper extends Component
 
     public function makeBlankTransaction()
     {
-        return PaperModel::make(['date' => now()]);
+        return Payment::make(['date' => now()]);
     }
 
     public function toggleShowFilters()
@@ -79,7 +83,7 @@ class Paper extends Component
         $this->showEditModal = true;
     }
 
-    public function edit(PaperModel $transaction)
+    public function edit(Payment $transaction)
     {
         $this->useCachedRows();
 
@@ -107,12 +111,14 @@ class Paper extends Component
 
     public function getRowsQueryProperty()
     {
-        $query = PaperModel::query()
-            ->when($this->filters['paper_title'], fn($query, $paper_title) => $query->where('paper_title', 'like', '%'.$paper_title.'%'))
-            ->when($this->filters['link_video'], fn($query, $link_video) => $query->where('link_video', 'like', '%'.$link_video.'%'))
-            ->when($this->filters['presenter_name'], fn($query, $presenter_name) => $query->where('presenter_name', 'like', '%'.$presenter_name.'%'))
-            ->when($this->filters['vita_presenter'], fn($query, $vita_presenter) => $query->where('vita_presenter', 'like', '%'.$vita_presenter.'%'))
-            ->when($this->filters['paper_code'], fn($query, $paper_code) => $query->where('paper_code', 'like', '%'.$paper_code.'%'));
+        $query = Payment::query()
+            ->when($this->filters['file'], fn($query, $paper_title) => $query->where('file', 'like', '%'.$file.'%'))
+            ->when($this->filters['tanggal'], fn($query, $link_video) => $query->where('tanggal', 'like', '%'.$tanggal.'%'))
+            ->when($this->filters['approval_status'], fn($query, $approval_status) => $query->where('approval_status', 'like', '%'.$approval_status.'%'))
+            ->when($this->filters['verification_status'], fn($query, $verification_status) => $query->where('verification_status', 'like', '%'.$verification_status.'%'))
+            ->when($this->filters['file_invoice'], fn($query, $file_invoice) => $query->where('file_invoice', 'like', '%'.$file_invoice.'%'))
+            ->when($this->filters['nominal_transfer'], fn($query, $nominal_transfer) => $query->where('nominal_transfer', 'like', '%'.$nominal_transfer.'%'))
+            ->when($this->filters['tanggal_transfer'], fn($query, $tanggal_transfer) => $query->where('tanggal_transfer', $tanggal_transfer));
 
         return $this->applySorting($query);
     }
@@ -126,13 +132,13 @@ class Paper extends Component
 
     public function download_surat($id) 
     {
-        $download = PaperModel::findorFail($id);
+        $download = Payment::findorFail($id);
         return response()->download(storage_path('app/'.$download->upload_dokumen));
     }
 
     public function rejected($id)
     {
-        $items = PaperModel::findorFail($id);
+        $items = Payment::findorFail($id);
         $items->update(array('status' => 'Ditolak'));
         
         $this->notify('Data berhasil ditolak');
@@ -141,9 +147,11 @@ class Paper extends Component
 
     public function render()
     {
-        return view('livewire.paper', [
-            'papers' => $this->rows,
+        return view('livewire.payment-proof', [
+            'items' => $this->rows,
         ]);
         
     }
 }
+
+

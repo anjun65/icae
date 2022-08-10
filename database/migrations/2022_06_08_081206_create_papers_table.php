@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('papers', function (Blueprint $table) {
             $table->id();
-            $table->int('user_id');
+            $table->integer('user_id');
             $table->string('paper_code');
             $table->string('paper_title');
             $table->string('link_video');

@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->int('user_id');
+            $table->integer('user_id');
             $table->string('file');
             $table->date('tanggal');
             $table->string('approval_status');
             $table->string('verification_status');
             $table->string('file_invoice');
             $table->date('tanggal_transfer');
-            $table->int('nominal_transfer');
+            $table->integer('nominal_transfer');
             $table->timestamps();
         });
     }
