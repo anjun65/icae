@@ -7,9 +7,13 @@
             
             <div class="w-full lg:w-1/2">
                 <h1 class="py-4 text-2xl font-extrabold text-gray-800">Submission Type: Full Paper</h1>
-                <p class="py-4 text-base text-gray-800">Authors are invited to submit Paper must be using IEEE Paper format, to download IEEE Paper format template:<br/><a href="doc/Conference-template-A4-IEEE.doc" target="_blank"><b>IEEE Conference Template Doc</b></a> or <a href="doc/conference-latex-template_IEEE.zip" target="_blank"><b>latex template</b></a></p>
-                <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b><a href="https://edas.info/N29938" target="_blank" >EDAS</a> </b></p>
-                <a href="https://edas.info/N29938" target="_blank" ><img src="img/edas.png" alt="" class="h-16 w-auto mb-4"></a>
+                <p class="py-4 text-base text-gray-800">Please download the template paper here: <a href="doc/CCER - Template.zip"><b>CCER - Template (zip)</b></a>
+    
+                    <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b><a href="https://edas.info/N29942" target="_blank" >EDAS</a> </b></p>
+                    
+                    <img src="img/edas.png" alt="" class="h-16 w-auto mb-4"/>
+                    
+                </p>
 
             </div>
 
@@ -34,9 +38,6 @@
                             <p class="text-sm font-medium leading-none text-gray-800"><div class="line-through">8 August 2022</div>22 August 2022</p>
                         </td>
                     </tr>
-
-                    
-
 
                     <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
@@ -63,6 +64,7 @@
                             <p class="text-sm font-medium leading-none text-gray-800">21 September 2022</p>
                         </td>
                     </tr>
+
 
                     <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">

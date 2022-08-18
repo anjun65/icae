@@ -3,7 +3,7 @@
   <div class="max-w-7xl mx-auto">
     
     <div class="md:min-h-screen relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-28 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="50,0 100,0 50,100 0,100" />
       </svg>
 
@@ -84,6 +84,16 @@
             <div class="rounded-md shadow">
               <a href="{{ route('404') }}" target="_blank" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-sm md:px-10">ICAE Proceeding 2021 </a>
             </div>
+          </div>
+
+          <div class="mt-7 grid grid-cols-3 gap-4">
+              <div><img src="img/EAI-Logo.png" alt="" class="h-16 w-auto mb-4"/></div>
+              <div><img src="img/EAI-Logo-CCER.png" alt="" class="h-16 w-auto mb-4"/></div>
+              <div><img src="img/EAI-Logo-EUDL.png" alt="" class="h-16 w-auto mb-4"/></div>
+          </div>
+
+          <div class="text-justify pr-4">
+            EAI CCER proceedings are submitted for inclusion in all leading indexing services, including Ei Compendex (if applicatiable), ISI Web of Science, Scopus, CrossRef, Google Scholar, DBLP, and more. However, indexing is not granted.
           </div>
         </div>
         
