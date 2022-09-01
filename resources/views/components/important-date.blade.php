@@ -9,7 +9,7 @@
                 <h1 class="py-4 text-2xl font-extrabold text-gray-800">Submission Type: Full Paper</h1>
                 <p class="py-4 text-base text-gray-800">Please download the template paper here: <a href="doc/CCER - Template.zip"><b>CCER - Template (zip)</b></a>
     
-                    <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b>EDAS</b></p>
+                    <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b><a href="https://edas.info/N29938" target="_blank" >EDAS</a> </b></p>
                     
                     <img src="img/edas.png" alt="" class="h-16 w-auto mb-4"/>
                     
