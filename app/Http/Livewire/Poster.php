@@ -95,6 +95,7 @@ class Poster extends Component
         $this->editing->fill([
             'user_id' => Auth::id(),
         ]);
+        dd($this->editing);
 
         $this->emitSelf('notify-saved');
         
