@@ -9,8 +9,8 @@ use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
 use Livewire\WithFileUploads;
 use App\Models\Poster as PosterModel;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class Poster extends Component
 {
@@ -25,7 +25,6 @@ class Poster extends Component
         'link_video' => '',
         'presenter_name' => '',
         'vita_presenter' => '',
-        'file_poster' => '',
     ];
     
     public PosterModel $editing;
@@ -42,7 +41,6 @@ class Poster extends Component
         'editing.link_video' => 'required',
         'editing.presenter_name' => 'required',
         'editing.vita_presenter' => 'required',
-        'editing.file_poster' => 'required',
     ]; }
 
     public function mount() { $this->editing = $this->makeBlankTransaction(); }
@@ -94,8 +92,8 @@ class Poster extends Component
     {
         $this->editing->fill([
             'user_id' => Auth::id(),
+            'file_poster' => $this->upload->store('assets/poster','public'),
         ]);
-        dd($this->editing);
 
         $this->emitSelf('notify-saved');
         
@@ -115,7 +113,6 @@ class Poster extends Component
             ->when($this->filters['link_video'], fn($query, $link_video) => $query->where('link_video', 'like', '%'.$link_video.'%'))
             ->when($this->filters['presenter_name'], fn($query, $presenter_name) => $query->where('presenter_name', 'like', '%'.$presenter_name.'%'))
             ->when($this->filters['vita_presenter'], fn($query, $vita_presenter) => $query->where('vita_presenter', 'like', '%'.$vita_presenter.'%'))
-            ->when($this->filters['file_poster'], fn($query, $file_poster) => $query->where('file_poster', 'like', '%'.$file_poster.'%'))
             ->when($this->filters['paper_code'], fn($query, $paper_code) => $query->where('paper_code', 'like', '%'.$paper_code.'%'));
 
         return $this->applySorting($query);

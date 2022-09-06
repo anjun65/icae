@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->integer('user_id');
             $table->string('file');
-            $table->date('tanggal');
-            $table->string('approval_status');
-            $table->string('verification_status');
-            $table->string('file_invoice');
+            $table->date('tanggal')->nullable();
+            $table->string('approval_status')->nullable();
+            $table->string('verification_status')->nullable();
+            $table->string('file_invoice')->nullable();
             $table->date('tanggal_transfer');
             $table->integer('nominal_transfer');
             $table->timestamps();

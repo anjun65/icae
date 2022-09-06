@@ -44,5 +44,7 @@
         @stack('modals')
 
         @livewireScripts
+        <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/datepicker.js"></script>
     </body>
 </html>

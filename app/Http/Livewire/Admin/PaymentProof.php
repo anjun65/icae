@@ -141,7 +141,7 @@ class PaymentProof extends Component
 
     public function render()
     {
-        return view('livewire.payment-proof', [
+        return view('livewire.admin.payment-proof', [
             'items' => $this->rows,
         ]);
         

@@ -8,11 +8,11 @@ use App\Http\Livewire\DataTable\WithCachedRows;
 use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
 use Livewire\WithFileUploads;
-use App\Models\Payment;
-use Illuminate\Support\Carbon;
+use App\Models\Poster as PosterModel;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
-class PaymentProof extends Component
+class Poster extends Component
 {
     use WithPerPagePagination, WithSorting, WithBulkActions, WithCachedRows, WithFileUploads;
 
@@ -20,23 +20,27 @@ class PaymentProof extends Component
     public $showEditModal = false;
     public $showFilters = false;
     public $filters = [
-        'file' => '',
-        'tanggal_transfer' => '',
-        'nominal_transfer' => '',
+        'paper_code' => '',
+        'paper_title' => '',
+        'link_video' => '',
+        'presenter_name' => '',
+        'vita_presenter' => '',
     ];
     
-    public Payment $editing;
+    public PosterModel $editing;
 
-    public $upload_bayar;
+    public $upload;
 
     protected $queryString = ['sorts'];
 
     protected $listeners = ['refreshTransactions' => '$refresh'];
 
     public function rules() { return [
-        'editing.file' => 'required',
-        'editing.tanggal_transfer' => 'required',
-        'editing.nominal_transfer' => 'required',
+        'editing.paper_code' => 'required',
+        'editing.paper_title' => 'required',
+        'editing.link_video' => 'required',
+        'editing.presenter_name' => 'required',
+        'editing.vita_presenter' => 'required',
     ]; }
 
     public function mount() { $this->editing = $this->makeBlankTransaction(); }
@@ -56,7 +60,7 @@ class PaymentProof extends Component
 
     public function makeBlankTransaction()
     {
-        return Payment::make(['date' => now()]);
+        return PosterModel::make(['date' => now()]);
     }
 
     public function toggleShowFilters()
@@ -75,7 +79,7 @@ class PaymentProof extends Component
         $this->showEditModal = true;
     }
 
-    public function edit(Payment $transaction)
+    public function edit(PosterModel $transaction)
     {
         $this->useCachedRows();
 
@@ -86,15 +90,10 @@ class PaymentProof extends Component
 
     public function save()
     {
-        
         $this->editing->fill([
             'user_id' => Auth::id(),
-            'file' => $this->upload_bayar->store('assets/payment','public'),
-            'approval_status' => "Diajukan",
-            'verification_status' => "Diajukan",
+            'file_poster' => $this->upload->store('assets/poster','public'),
         ]);
-
-        
 
         $this->emitSelf('notify-saved');
         
@@ -109,10 +108,12 @@ class PaymentProof extends Component
 
     public function getRowsQueryProperty()
     {
-        $query = Payment::query()
-            ->when($this->filters['file'], fn($query, $file) => $query->where('file', 'like', '%'.$file.'%'))
-            ->when($this->filters['nominal_transfer'], fn($query, $nominal_transfer) => $query->where('nominal_transfer', 'like', '%'.$nominal_transfer.'%'))
-            ->when($this->filters['tanggal_transfer'], fn($query, $tanggal_transfer) => $query->where('tanggal_transfer', $tanggal_transfer));
+        $query = PosterModel::query()
+            ->when($this->filters['paper_title'], fn($query, $paper_title) => $query->where('paper_title', 'like', '%'.$paper_title.'%'))
+            ->when($this->filters['link_video'], fn($query, $link_video) => $query->where('link_video', 'like', '%'.$link_video.'%'))
+            ->when($this->filters['presenter_name'], fn($query, $presenter_name) => $query->where('presenter_name', 'like', '%'.$presenter_name.'%'))
+            ->when($this->filters['vita_presenter'], fn($query, $vita_presenter) => $query->where('vita_presenter', 'like', '%'.$vita_presenter.'%'))
+            ->when($this->filters['paper_code'], fn($query, $paper_code) => $query->where('paper_code', 'like', '%'.$paper_code.'%'));
 
         return $this->applySorting($query);
     }
@@ -126,13 +127,13 @@ class PaymentProof extends Component
 
     public function download_surat($id) 
     {
-        $download = Payment::findorFail($id);
+        $download = PosterModel::findorFail($id);
         return response()->download(storage_path('app/'.$download->upload_dokumen));
     }
 
     public function rejected($id)
     {
-        $items = Payment::findorFail($id);
+        $items = PosterModel::findorFail($id);
         $items->update(array('status' => 'Ditolak'));
         
         $this->notify('Data berhasil ditolak');
@@ -141,11 +142,9 @@ class PaymentProof extends Component
 
     public function render()
     {
-        return view('livewire.payment-proof', [
+        return view('livewire.admin.poster', [
             'items' => $this->rows,
         ]);
         
     }
 }
-
-
