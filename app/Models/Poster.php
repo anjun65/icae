@@ -19,4 +19,9 @@ class Poster extends Model
         'file_poster',
     ];
 
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
 }

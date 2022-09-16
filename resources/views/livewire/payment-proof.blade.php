@@ -1,14 +1,8 @@
 <div>
-    <h1 class="text-2xl font-semibold text-gray-900">Payment</h1></h1>
-
     <div class="py-4 space-y-4">
         <!-- Top Bar -->
         <div class="flex justify-between">
-            <div class="w-2/4 flex space-x-4">
-                <x-input.text wire:model="filters.item_code" placeholder="Search Payment Code..." />
-
-                <x-button.link wire:click="toggleShowFilters">@if ($showFilters) Sembunyikan @endif Pencarian Spesifik...</x-button.link>
-            </div>
+            <h1 class="text-2xl font-semibold text-gray-900">Payment</h1>
 
             <div class="space-x-2 flex items-center">
                 <x-input.group borderless paddingless for="perPage" label="Halaman">
@@ -29,34 +23,6 @@
             </div>
         </div>
 
-        <!-- Advanced Search -->
-        <div>
-            @if ($showFilters)
-            <div class="bg-cool-gray-200 p-4 rounded shadow-inner flex relative">
-                <div class="w-1/2 pr-2 space-y-4">
-
-                    <x-input.group inline for="filter-tanggal" label="Tanggal">
-                        <x-input.text wire:model.lazy="filters.tanggal" id="filter-tanggal" />
-                    </x-input.group>
-
-                    <x-input.group inline for="filter-approval_status" label="Approval Status">
-                        <x-input.text wire:model.lazy="filters.approval_status" id="filter-approval_status" />
-                    </x-input.group>
-
-                </div>
-
-                <div class="w-1/2 pl-2 space-y-4">
-
-                     <x-input.group inline for="filter-verification_status" label="Verification Status">
-                        <x-input.text wire:model.lazy="filters.verification_status" id="filter-verification_status" />
-                    </x-input.group>
-
-                    <x-button.link wire:click="resetFilters" class="absolute right-0 bottom-0 p-4">Reset Filters</x-button.link>
-                </div>
-            </div>
-            @endif
-        </div>
-
         <!-- Transactions Table -->
         <div class="flex-col space-y-4">
             <x-table>
@@ -68,7 +34,7 @@
                     <x-table.heading sortable multi-column wire:click="sortBy('nominal_transfer')" :direction="$sorts['nominal_transfer'] ?? null">Nominal Transfer</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('approval_status')" :direction="$sorts['approval_status'] ?? null">Approval Status</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('verification_status')" :direction="$sorts['verification_status'] ?? null">Verification Status</x-table.heading>
-                    
+                    <x-table.heading >File</x-table.heading>
                     <x-table.heading />
                 </x-slot>
 
@@ -115,6 +81,11 @@
                             <span class="text-cool-gray-900 font-medium">{{ $item->verification_status }} </span>
                         </x-table.cell>
 
+                        <x-table.cell>
+                            <a target="_blank" href="{{ Storage::url($item->file) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Lihat</a>
+                            
+                        </x-table.cell>
+                        
                         <x-table.cell>
                             <x-button.link wire:click="edit({{ $item->id }})">Edit</x-button.link>
                         </x-table.cell>
@@ -166,7 +137,7 @@
                 </x-input.group>
 
                 <x-input.group for="tanggal_transfer" label="Tanggal Transfer" :error="$errors->first('editing.tanggal_transfer')">
-                    <x-input.text type="text" wire:model="editing.tanggal_transfer" id="tanggal_transfer" placeholder="Tanggal Transfer" />
+                    <x-input.text type="date" wire:model="editing.tanggal_transfer" id="tanggal_transfer" placeholder="Tanggal Transfer" />
                 </x-input.group>
 
                 <x-input.group label="Upload Bukti Pembayaran" for="file" :error="$errors->first('upload_bayar')">

@@ -30,6 +30,7 @@ class Paper extends Component
     public PaperModel $editing;
 
     public $upload;
+    public $user_id;
 
     protected $queryString = ['sorts'];
 
@@ -43,7 +44,10 @@ class Paper extends Component
         'editing.vita_presenter' => 'required',
     ]; }
 
-    public function mount() { $this->editing = $this->makeBlankTransaction(); }
+    public function mount() {
+        $this->user_id = Auth::id();
+        $this->editing = $this->makeBlankTransaction(); 
+    }
     public function updatedFilters() { $this->resetPage(); }
 
 
@@ -108,6 +112,7 @@ class Paper extends Component
     public function getRowsQueryProperty()
     {
         $query = PaperModel::query()
+            ->when($this->user_id, fn($query, $user_id) => $query->where('user_id', $user_id))
             ->when($this->filters['paper_title'], fn($query, $paper_title) => $query->where('paper_title', 'like', '%'.$paper_title.'%'))
             ->when($this->filters['link_video'], fn($query, $link_video) => $query->where('link_video', 'like', '%'.$link_video.'%'))
             ->when($this->filters['presenter_name'], fn($query, $presenter_name) => $query->where('presenter_name', 'like', '%'.$presenter_name.'%'))

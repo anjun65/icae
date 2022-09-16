@@ -18,14 +18,6 @@
                         <option value="50">50</option>
                     </x-input.select>
                 </x-input.group>
-
-                <x-dropdown label="Aksi">
-                    <x-dropdown.item type="button" wire:click="$toggle('showDeleteModal')" class="flex items-center space-x-2">
-                        <x-icon.trash class="text-cool-gray-400"/> <span>Hapus</span>
-                    </x-dropdown.item>
-                </x-dropdown>
-
-                <x-button.primary wire:click="create"><x-icon.plus/> Baru</x-button.primary>
             </div>
         </div>
 
@@ -65,6 +57,7 @@
                         <x-input.checkbox wire:model="selectPage" />
                     </x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('id')" :direction="$sorts['id'] ?? null">ID</x-table.heading>
+                    <x-table.heading sortable multi-column wire:click="sortBy('user_id')" :direction="$sorts['user_id'] ?? null">User</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('nominal_transfer')" :direction="$sorts['nominal_transfer'] ?? null">Nominal Transfer</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('approval_status')" :direction="$sorts['approval_status'] ?? null">Approval Status</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('verification_status')" :direction="$sorts['verification_status'] ?? null">Verification Status</x-table.heading>
@@ -104,6 +97,10 @@
                         </x-table.cell>
 
                         <x-table.cell>
+                            <span class="text-cool-gray-900 font-medium">{{ $item->user->name }} </span>
+                        </x-table.cell>
+
+                        <x-table.cell>
                             <span class="text-cool-gray-900 font-medium">{{ $item->nominal_transfer }} </span>
                         </x-table.cell>
 
@@ -113,6 +110,10 @@
 
                         <x-table.cell>
                             <span class="text-cool-gray-900 font-medium">{{ $item->verification_status }} </span>
+                        </x-table.cell>
+
+                        <x-table.cell>
+                            <a target="_blank" href="{{ Storage::url($item->file) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Lihat</a>
                         </x-table.cell>
 
                         <x-table.cell>
@@ -161,31 +162,30 @@
             <x-slot name="title">Add Payment</x-slot>
 
             <x-slot name="content">
-                <x-input.group for="nominal_transfer" label="Nominal Transfer" :error="$errors->first('editing.nominal_transfer')">
-                    <x-input.text type="number" wire:model="editing.nominal_transfer" id="nominal_transfer" placeholder="Nominal Transfer" />
+                <x-input.group for="nominal_transfer" label="Nominal Transfer">
+                    <x-input.text disabled type="number" value="{{ $editing->nominal_transfer }}" id="nominal_transfer" placeholder="Nominal Transfer" />
                 </x-input.group>
 
-                <x-input.group for="tanggal_transfer" label="Tanggal Transfer" :error="$errors->first('editing.tanggal_transfer')">
-                    <x-input.text type="text" wire:model="editing.tanggal_transfer" id="tanggal_transfer" placeholder="Tanggal Transfer" />
+                <x-input.group for="tanggal_transfer" label="Tanggal Transfer">
+                <x-input.text disabled type="text" value="{{ $editing->tanggal_transfer }}" id="tanggal_transfer" placeholder="Tanggal Transfer" />
                 </x-input.group>
 
-                <x-input.group label="Upload Bukti Pembayaran" for="file" :error="$errors->first('upload_bayar')">
-                    @if ($upload_bayar)
-                        <div class="mb-5">
-                            {{ $upload_bayar->getClientOriginalName()}}
-                        </div>
-                    @endif
-                    <x-input.file-upload wire:model="upload_bayar" accept="image/png, image/jpeg" id="upload_bayar">
-                        
-                    </x-input.file-upload>
+
+                <x-input.group for="File" label="File">
+                    <x-table.cell>
+                        <a target="_blank" href="{{ Storage::url($editing->file) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Lihat</a>
+                    </x-table.cell>
                 </x-input.group>
+                
                 
             </x-slot>
 
             <x-slot name="footer">
                 <x-button.secondary wire:click="$set('showEditModal', false)">Cancel</x-button.secondary>
 
-                <x-button.primary type="submit">Save</x-button.primary>
+                <button wire:click="rejected({{ $editing->id }})" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Reject</button>
+                
+                <button wire:click="approved({{ $editing->id }})" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Approve</button>
             </x-slot>
         </x-modal.dialog>
     </form>

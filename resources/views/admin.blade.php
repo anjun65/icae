@@ -7,11 +7,11 @@
 
     <main class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0" x-data="" x-init="$el.focus()">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            @livewire('paper')
+            @livewire('admin.paper')
 
-            @livewire('poster')
+            @livewire('admin.poster')
 
-            @livewire('payment-proof')
+            @livewire('admin.payment-proof')
         </div>
     </main>
 

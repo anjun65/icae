@@ -27,6 +27,8 @@ class PaymentProof extends Component
     
     public Payment $editing;
 
+    public $user_id;
+
     public $upload_bayar;
 
     protected $queryString = ['sorts'];
@@ -39,7 +41,10 @@ class PaymentProof extends Component
         'editing.nominal_transfer' => 'required',
     ]; }
 
-    public function mount() { $this->editing = $this->makeBlankTransaction(); }
+    public function mount() { 
+        $this->user_id = Auth::id();
+        $this->editing = $this->makeBlankTransaction();
+    }
     public function updatedFilters() { $this->resetPage(); }
 
 
@@ -110,6 +115,7 @@ class PaymentProof extends Component
     public function getRowsQueryProperty()
     {
         $query = Payment::query()
+            ->when($this->user_id, fn($query, $user_id) => $query->where('user_id', $user_id))
             ->when($this->filters['file'], fn($query, $file) => $query->where('file', 'like', '%'.$file.'%'))
             ->when($this->filters['nominal_transfer'], fn($query, $nominal_transfer) => $query->where('nominal_transfer', 'like', '%'.$nominal_transfer.'%'))
             ->when($this->filters['tanggal_transfer'], fn($query, $tanggal_transfer) => $query->where('tanggal_transfer', $tanggal_transfer));

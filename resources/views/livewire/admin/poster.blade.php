@@ -18,14 +18,6 @@
                         <option value="50">50</option>
                     </x-input.select>
                 </x-input.group>
-
-                <x-dropdown label="Aksi">
-                    <x-dropdown.item type="button" wire:click="$toggle('showDeleteModal')" class="flex items-center space-x-2">
-                        <x-icon.trash class="text-cool-gray-400"/> <span>Hapus</span>
-                    </x-dropdown.item>
-                </x-dropdown>
-
-                <x-button.primary wire:click="create"><x-icon.plus/> Baru</x-button.primary>
             </div>
         </div>
 
@@ -65,6 +57,7 @@
                     <x-table.heading class="pr-0 w-8">
                         <x-input.checkbox wire:model="selectPage" />
                     </x-table.heading>
+                    <x-table.heading sortable multi-column wire:click="sortBy('user_id')" :direction="$sorts['user_id'] ?? null">User</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('item_code')" :direction="$sorts['item_code'] ?? null">Edas item Code</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('item_title')" :direction="$sorts['item_title'] ?? null">item Title</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('presenter_name')" :direction="$sorts['presenter_name'] ?? null">Presenter Name</x-table.heading>
@@ -72,7 +65,6 @@
                     <x-table.heading sortable multi-column wire:click="sortBy('link_video')" :direction="$sorts['link_video'] ?? null">Link Video</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('link_poster')" :direction="$sorts['file_poster'] ?? null">File Poster</x-table.heading>
                     
-                    <x-table.heading />
                 </x-slot>
 
                 <x-slot name="body">
@@ -96,6 +88,11 @@
                         <x-table.cell class="pr-0">
                             <x-input.checkbox wire:model="selected" value="{{ $item->id }}" />
                         </x-table.cell>
+
+                        <x-table.cell>
+                            <span class="text-cool-gray-900 font-medium">{{ $item->user->name }} </span>
+                        </x-table.cell>
+
                         <x-table.cell>
                             <span href="#" class="truncate text-sm leading-5">
                                 <p class="inline-flex text-cool-gray-600 truncate">
@@ -125,9 +122,7 @@
                             <img src="{{ Storage::url($item->file_poster) }}" class="w-full" alt="">
                         </x-table.cell>
 
-                        <x-table.cell>
-                            <x-button.link wire:click="edit({{ $item->id }})">Edit</x-button.link>
-                        </x-table.cell>
+
                     </x-table.row>
                     @empty
                     <x-table.row>

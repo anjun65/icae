@@ -1,15 +1,10 @@
 <div>
-    <h1 class="text-2xl font-semibold text-gray-900">Paper</h1></h1>
+    
 
     <div class="py-4 space-y-4">
         <!-- Top Bar -->
         <div class="flex justify-between">
-            <div class="w-2/4 flex space-x-4">
-                <x-input.text wire:model="filters.paper_code" placeholder="Search Paper Code..." />
-
-                <x-button.link wire:click="toggleShowFilters">@if ($showFilters) Sembunyikan @endif Pencarian Spesifik...</x-button.link>
-            </div>
-
+            <h1 class="text-2xl font-semibold text-gray-900">Paper</h1></h1>
             <div class="space-x-2 flex items-center">
                 <x-input.group borderless paddingless for="perPage" label="Halaman">
                     <x-input.select wire:model="perPage" id="perPage">
@@ -27,35 +22,6 @@
 
                 <x-button.primary wire:click="create"><x-icon.plus/> Baru</x-button.primary>
             </div>
-        </div>
-
-        <!-- Advanced Search -->
-        <div>
-            @if ($showFilters)
-            <div class="bg-cool-gray-200 p-4 rounded shadow-inner flex relative">
-                <div class="w-1/2 pr-2 space-y-4">
-
-                    <x-input.group inline for="filter-paper_title" label="Paper Title">
-                        <x-input.text wire:model.lazy="filters.paper_title" id="filter-paper_title" />
-                    </x-input.group>
-
-                    
-                    <x-input.group inline for="filter-vita_presenter" label="Vita Presenter">
-                        <x-input.text wire:model.lazy="filters.vita_presenter" id="filter-vita_presenter" />
-                    </x-input.group>
-
-                </div>
-
-                <div class="w-1/2 pl-2 space-y-4">
-
-                     <x-input.group inline for="filter-presenter_name" label="Presenter Name">
-                        <x-input.text wire:model.lazy="filters.presenter_name" id="filter-presenter_name" />
-                    </x-input.group>
-
-                    <x-button.link wire:click="resetFilters" class="absolute right-0 bottom-0 p-4">Reset Filters</x-button.link>
-                </div>
-            </div>
-            @endif
         </div>
 
         <!-- Transactions Table -->

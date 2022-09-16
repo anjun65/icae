@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Admin;
 
 use Livewire\Component;
 use App\Http\Livewire\DataTable\WithSorting;
@@ -87,12 +87,12 @@ class PaymentProof extends Component
     public function save()
     {
         
-        $this->editing->fill([
-            'user_id' => Auth::id(),
-            'file' => $this->upload_bayar->store('assets/payment','public'),
-            'approval_status' => "Diajukan",
-            'verification_status' => "Diajukan",
-        ]);
+        // $this->editing->fill([
+        //     'user_id' => Auth::id(),
+        //     'file' => $this->upload_bayar->store('assets/payment','public'),
+        //     'approval_status' => "Diajukan",
+        //     'verification_status' => "Diajukan",
+        // ]);
 
         
 
@@ -124,16 +124,22 @@ class PaymentProof extends Component
         });
     }
 
-    public function download_surat($id) 
-    {
-        $download = Payment::findorFail($id);
-        return response()->download(storage_path('app/'.$download->upload_dokumen));
-    }
-
     public function rejected($id)
     {
+        
         $items = Payment::findorFail($id);
-        $items->update(array('status' => 'Ditolak'));
+
+        $items->update(['verification_status' => 'Rejected']);
+        $items->update(['approval_status' => 'Rejected']);
+
+        $this->showEditModal = false;
+    }
+
+    public function approved($id)
+    {
+        $items = Payment::findorFail($id);
+        $items->update(['verification_status' => 'Approved']);
+        $items->update(['approval_status' => 'Approved']);
         
         $this->notify('Data berhasil ditolak');
         $this->showEditModal = false;

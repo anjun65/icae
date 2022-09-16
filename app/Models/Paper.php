@@ -17,4 +17,10 @@ class Paper extends Model
         'presenter_name',
         'vita_presenter',
     ];
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
 }

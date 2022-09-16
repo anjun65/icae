@@ -19,4 +19,9 @@ class Payment extends Model
         'tanggal_transfer',
         'nominal_transfer',
     ];
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
 }
