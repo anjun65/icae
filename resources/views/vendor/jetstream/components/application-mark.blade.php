@@ -1,1 +1,1 @@
-<img class="h-8 w-auto" src="img/logo-bl.png" alt="">
+<img class="h-8 w-auto" src="{{ asset('img/logo-bl.png') }}" alt="">

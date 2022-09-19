@@ -20,7 +20,7 @@
                     </x-dropdown.item>
                 </x-dropdown>
 
-                <x-button.primary wire:click="create"><x-icon.plus/> Baru</x-button.primary>
+                <x-button.primary wire:click="create"><x-icon.plus/> New</x-button.primary>
             </div>
         </div>
 
@@ -162,7 +162,7 @@
             <x-slot name="footer">
                 <x-button.secondary wire:click="$set('showEditModal', false)">Cancel</x-button.secondary>
 
-                <x-button.primary type="submit">Approve</x-button.primary>
+                <x-button.primary type="submit">Save</x-button.primary>
             </x-slot>
         </x-modal.dialog>
     </form>

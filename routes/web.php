@@ -45,10 +45,6 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-
-    // Route::get('admin/dashboard', function () {
-    //     return view('admin');
-    // })->name('admin');
 });
 
 Route::middleware([
