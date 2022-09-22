@@ -3,8 +3,8 @@
 
     <div class="py-4 space-y-4">
         <!-- Top Bar -->
-        <div class="flex justify-between">
-            <h1 class="text-2xl font-semibold text-gray-900">Paper</h1>
+        <h1 class="text-2xl font-semibold text-gray-900">Paper</h1>
+        <div class="flex justify-end">
             <div class="space-x-2 flex items-center">
                 <x-input.group borderless paddingless for="perPage" label="Page">
                     <x-input.select wire:model="perPage" id="perPage">
