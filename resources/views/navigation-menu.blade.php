@@ -182,6 +182,20 @@
             </div>
 
             <div class="mt-3 space-y-1">
+                @if (Auth::user()->roles == 'ADMIN')
+                    <div class="block px-4 py-2 text-xs text-gray-400">
+                        {{ __('Admin Dashboard') }}
+                    </div>
+
+                    <x-jet-responsive-nav-link href="{{ route('admin') }}" :active="request()->routeIs('admin')">
+                        {{ __('Admin Dashboard') }}
+                    </x-jet-responsive-nav-link>
+                    
+                    <x-jet-responsive-nav-link href="{{ route('users') }}" :active="request()->routeIs('users')">
+                        {{ __('List Users') }}
+                    </x-jet-responsive-nav-link>
+                @endif
+
                 <!-- Account Management -->
                 <x-jet-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
                     {{ __('Profile') }}
