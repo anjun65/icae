@@ -55,4 +55,8 @@ Route::middleware([
     Route::get('admin/dashboard', function () {
         return view('admin');
     })->name('admin');
+
+    Route::get('admin/users', function () {
+        return view('users');
+    })->name('users');
 });

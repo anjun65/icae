@@ -4,9 +4,9 @@
     <div class="py-4 space-y-4">
         <!-- Top Bar -->
         <div class="flex justify-between">
-            <h1 class="text-2xl font-semibold text-gray-900">Paper</h1></h1>
+            <h1 class="text-2xl font-semibold text-gray-900">Paper</h1>
             <div class="space-x-2 flex items-center">
-                <x-input.group borderless paddingless for="perPage" label="Halaman">
+                <x-input.group borderless paddingless for="perPage" label="Page">
                     <x-input.select wire:model="perPage" id="perPage">
                         <option value="10">10</option>
                         <option value="25">25</option>
@@ -14,9 +14,9 @@
                     </x-input.select>
                 </x-input.group>
 
-                <x-dropdown label="Aksi">
+                <x-dropdown label="Action">
                     <x-dropdown.item type="button" wire:click="$toggle('showDeleteModal')" class="flex items-center space-x-2">
-                        <x-icon.trash class="text-cool-gray-400"/> <span>Hapus</span>
+                        <x-icon.trash class="text-cool-gray-400"/> <span>Delete</span>
                     </x-dropdown.item>
                 </x-dropdown>
 
@@ -120,13 +120,13 @@
             <x-slot name="title">Delete Paper</x-slot>
 
             <x-slot name="content">
-                <div class="py-8 text-cool-gray-700">Are you sure? Deleted data cannot be recovered.</div>
+                Are you sure? Deleted data cannot be recovered.
             </x-slot>
 
             <x-slot name="footer">
                 <x-button.secondary wire:click="$set('showDeleteModal', false)">Batal</x-button.secondary>
 
-                <x-button.primary type="submit">Hapus</x-button.primary>
+                <x-button.primary type="submit">Delete</x-button.primary>
             </x-slot>
         </x-modal.confirmation>
     </form>

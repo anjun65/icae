@@ -55,9 +55,15 @@
                 </div>
             </div>
 
-            <x-jet-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
-                    {{ __('Login') }}
-            </x-jet-nav-link>
+            @if (Auth::id())
+                <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
+                    {{ __('Dashboard') }}
+                </x-jet-nav-link>
+            @else
+                <x-jet-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')" class="hidden sm:flex sm:items-center sm:ml-6 px-10">
+                        {{ __('Login') }}
+                </x-jet-nav-link>
+            @endif
 
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">

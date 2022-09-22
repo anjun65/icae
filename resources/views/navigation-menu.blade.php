@@ -97,6 +97,21 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
+                            @if (Auth::user()->roles == 'ADMIN')
+                                <div class="block px-4 py-2 text-xs text-gray-400">
+                                    {{ __('Admin Dashboard') }}
+                                </div>
+
+                                <x-jet-dropdown-link href="{{ route('admin') }}">
+                                    {{ __('Admin Dashboard') }}
+                                </x-jet-dropdown-link>
+
+                                <x-jet-dropdown-link href="{{ route('users') }}">
+                                    {{ __('List Users') }}
+                                </x-jet-dropdown-link>  
+                            @endif
+                            
+
                             <div class="block px-4 py-2 text-xs text-gray-400">
                                 {{ __('Manage Account') }}
                             </div>
