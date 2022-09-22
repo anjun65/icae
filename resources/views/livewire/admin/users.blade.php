@@ -1,5 +1,5 @@
 <div>
-    <h1 class="text-2xl font-semibold text-gray-900">Poster</h1></h1>
+    <h1 class="text-2xl font-semibold text-gray-900">User</h1></h1>
 
     <div class="py-4 space-y-4">
         <!-- Top Bar -->
