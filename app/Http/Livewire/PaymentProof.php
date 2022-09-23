@@ -9,6 +9,7 @@ use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
 use Livewire\WithFileUploads;
 use App\Models\Payment;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 
@@ -134,6 +135,20 @@ class PaymentProof extends Component
     {
         $download = Payment::findorFail($id);
         return response()->download(storage_path('app/'.$download->upload_dokumen));
+    }
+
+    
+    public function invoice($id) 
+    {
+        
+        $item = Payment::findorFail($id)->toArray();
+        
+        $pdfContent = PDF::loadView('pdf.invoice',$item)->setPaper(array(0,0,567.00,283.80), 'portrait')->output();
+        return response()->streamDownload(
+            fn () => print($pdfContent),
+            "filename.pdf"
+        );
+        
     }
 
     public function rejected($id)
