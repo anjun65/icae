@@ -48,7 +48,7 @@
                     <option value="Indonesia Reguler">Indonesia Reguler</option>
                     <option value="International Student">International Student</option>
                     <option value="Indonesia Student">Indonesia Student</option>
-                    <option value="Poster Reguler">Poster Regule</option>
+                    <option value="Poster Reguler">Poster Reguler</option>
                     <option value="Poster Student">Poster Student</option>
                 </x-input.select>
 

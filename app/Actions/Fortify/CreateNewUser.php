@@ -26,7 +26,7 @@ class CreateNewUser implements CreatesNewUsers
             'email_edas' => ['required', 'string', 'email', 'max:255'],
             'password' => $this->passwordRules(),
             'edas_id' => ['required','integer'],
-            'roles' => ['required', 'in:International Reguler,Indonesia Reguler,International Student,Poster Reguler,Poster Student'],
+            'roles' => ['required', 'in:International Reguler,Indonesia Reguler,International Student,Indonesia Student,Poster Reguler,Poster Student'],
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['accepted', 'required'] : '',
         ])->validate();
 
