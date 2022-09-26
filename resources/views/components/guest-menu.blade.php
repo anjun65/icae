@@ -52,6 +52,10 @@
                         {{ __('Virtual Conference') }}
                     </x-jet-nav-link>
 
+                    <x-jet-nav-link href="{{ route('registration') }}" :active="request()->routeIs('registration')">
+                        {{ __('Registration') }}
+                    </x-jet-nav-link>
+
                 </div>
             </div>
 
