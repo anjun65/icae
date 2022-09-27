@@ -9,14 +9,14 @@
                     <li>1. Fill in your Zoom display name in the format: Room_Full Name. Example: A1_John Doe.</li>
                     <li>2. The duration of the presentation must be 12-13 minutes.</li>
                     <li>3. We prefer live presentation unless there is technical problem. In such case, we will display your submitted presentation video.</li>
-                    <li>4. During the presentation, please use the ICAE virtual background.</li>
+                    <li>4. During the presentation, please use the ICAE virtual background <a href="img/zoom-background.jpg" class="text-indigo-500 font-bold" target="_blank">Zoom Background</a>.</li>
                     <li>5. The Q&A session will be held after all the scheduled papers in the room are presented..</li>
                     <li>6. All presenters must remain in the room since the start of the parallel session until the moderator closes the session.</li>
 
                 </ol>
             </p>
                 <br/>
-            There will be a rehearsal session on Friday, September 30th 2022, where all participants must try joining the room and learn to display the presentation or video to make sure everything runs smoothly at the conference day. The rehearsal will be started by Platform Introduction at 02.00 PM in the room link below. You can test the link to your parallel presentation room afterwards.
+            {{-- There will be a rehearsal session on Friday, September 30th 2022, where all participants must try joining the room and learn to display the presentation or video to make sure everything runs smoothly at the conference day. The rehearsal will be started by Platform Introduction at 02.00 PM in the room link below. You can test the link to your parallel presentation room afterwards. --}}
             
             {{-- <p class="mt-1 max-w-2xl text-sm text-gray-500">Batam, Indonesia</p> --}}
         </div>

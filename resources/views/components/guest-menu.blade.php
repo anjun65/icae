@@ -45,9 +45,9 @@
                         </x-slot>
                     </x-jet-dropdown>
 
-                    {{-- <x-jet-nav-link href="{{ route('paper') }}" :active="request()->routeIs('paper')">
+                    <x-jet-nav-link href="{{ route('paper') }}" :active="request()->routeIs('paper')">
                         {{ __('Accepted Paper & Poster') }}
-                    </x-jet-nav-link> --}}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('conference') }}" :active="request()->routeIs('conference')">
                         {{ __('Virtual Conference') }}
                     </x-jet-nav-link>
@@ -94,11 +94,11 @@
 
             {{-- <x-jet-responsive-nav-link href="{{ route('local') }}" :active="request()->routeIs('local')">
                 {{ __('Organizing Committees') }}
-            </x-jet-responsive-nav-link>
+            </x-jet-responsive-nav-link> --}}
 
             <x-jet-responsive-nav-link href="{{ route('paper') }}" :active="request()->routeIs('paper')">
                 {{ __('Accepted Paper & Poster') }}
-            </x-jet-responsive-nav-link> --}}
+            </x-jet-responsive-nav-link>
             
             <x-jet-responsive-nav-link href="{{ route('conference') }}" :active="request()->routeIs('conference')">
                 {{ __('Virtual Conference') }}
