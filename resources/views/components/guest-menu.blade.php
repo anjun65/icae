@@ -104,6 +104,10 @@
                 {{ __('Virtual Conference') }}
             </x-jet-responsive-nav-link>
 
+            <x-jet-responsive-nav-link href="{{ route('registration') }}" :active="request()->routeIs('registration')">
+                {{ __('Registration') }}
+            </x-jet-responsive-nav-link>
+
             @if (Auth::id())
                 <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
