@@ -63,7 +63,7 @@
                     <x-table.heading sortable multi-column wire:click="sortBy('verification_status')" :direction="$sorts['verification_status'] ?? null">Verification Status</x-table.heading>
                     <x-table.heading>File</x-table.heading>
                     <x-table.heading>Invoice / Kwitansi</x-table.heading>
-                    <x-table.heading />
+                    <x-table.heading/>
                 </x-slot>
 
                 <x-slot name="body">
