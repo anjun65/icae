@@ -7,8 +7,11 @@ use App\Http\Livewire\DataTable\WithSorting;
 use App\Http\Livewire\DataTable\WithCachedRows;
 use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
+use App\Models\Paper;
+use App\Models\Poster;
 use Livewire\WithFileUploads;
 use App\Models\Payment;
+use App\Models\User;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -141,12 +144,35 @@ class PaymentProof extends Component
     public function invoice($id) 
     {
         
-        $item = Payment::findorFail($id)->toArray();
-        
-        $pdfContent = PDF::loadView('pdf.invoice',$item)->setPaper(array(0,0,567.00,283.80), 'portrait')->output();
+        $item = Payment::findorFail($id);
+        // $user = User::findorFail($item->user_id)->toArray();
+        $paper = Paper::where('user_id', $item->user_id)->get();
+        $poster = Poster::where('user_id', $item->user_id)->get();
+
+        // dd($paper);
+        // $user = Paper::findorFail($item->user_id)->toArray();
+
+        if ($item->verification_status == 'Approved'){
+            $berkas = "Kwitansi";
+        }
+        else {
+            $berkas = "Invoice";
+        }
+
+        view()->share([
+            'item'=> $item,
+            'paper'=> $paper,
+            'poster'=> $poster,
+        ]);
+
+        $pdfContent = PDF::loadView('pdf.invoice',[
+            'item'=> $item,
+            'papers'=> $paper,
+            'posters'=> $poster,
+        ])->setPaper('a4', 'portrait')->output();
         return response()->streamDownload(
             fn () => print($pdfContent),
-            "filename.pdf"
+            $berkas."000".$item->id.".pdf"
         );
         
     }

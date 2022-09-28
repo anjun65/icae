@@ -5,64 +5,166 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-		<table class='table table-bordered' style="font-size: 12px;margin-top:-10px;margin-bottom:0px">
-			<tbody>
-                <tr>
-					<td colspan="4" style="border-right:0;"><img src="img/logo-bl.png" class="w-auto" style="height: 30px"></td>
-                    <td colspan="8" style="border-left:0;" class="text-center"><b style="font-size: 18px !important;">Receipt</b></td>
-				</tr>
-                <tr>
-					<td colspan="6" style="line-height:0;border:0;"><b>Received from</b> (Terima dari)</td>
-                    <td colspan="1" style="line-height:0;border:0;">:</td>
-                    <td colspan="5" style="line-height:0;border:0;"></td>
-				</tr>
-                <tr>
-					<td colspan="6" style="min-height:10px;line-height:0;border:0;"><b>Amount</b> (Sejumlah)</td>
-                    <td colspan="1" style="min-height:10px;line-height:0;border:0;">:</td>
-                    <td colspan="5" style="min-height:10px;line-height:0;border:0;">Rp. {{ $nominal_transfer }}</td>
-				</tr>
-                <tr>
-					<td colspan="6" style="min-height:10px;line-height:0;border:0;"><b>USD</b> (Terbilang)</td>
-                    <td colspan="1" style="min-height:10px;line-height:0;border:0;">:</td>
-                    <td colspan="5" style="min-height:10px;line-height:0;border:0;">One Million Rupiahs</td>
-				</tr>
-                <tr>
-					<td colspan="6" style="border:0;"><b>Insettlement of</b> (Untuk Pembayaran)</td>
-                    <td colspan="1" style="border:0;">:</td>
-                    <td colspan="5" style="border:0;">Registration Fee For: Attendee of International Conference on Applied Engineering (ICAE 2022) For Paper Title lorem psum dolor sit amet</td>
-				</tr>
-                <tr>
-					<td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-                    <td style="line-height:0;border:0;height:0px"></td>
-				</tr>
-                <tr>
-					<td colspan="6" style="line-height:0;border:0;">Batam, 10/09/2022</td>
-                    <td colspan="6" style="border:0;"></td></td>
-				</tr>
-                <tr>
-					<td colspan="6" style="line-height:0;border:0;"><b>Accepted by</b> (diterima dari):</td>
-                    <td colspan="6" style="border:0;"></td></td>
-				</tr>
-                <tr>
-					<td colspan="6" style="border:0;"><img src="img/ttd.png" class="w-auto" style="position:absolute;height: 40px;"></td>
-				    <td colspan="6" style="border:0;"></td></td>
-                </tr>
-                <tr>
-					<td colspan="6" style="border:0;">ICAE 2022 Commitee</td>
-                    <td colspan="6" style="border:0;"></td></td>
-				</tr>
-			</tbody>
-		</table>
+    <table class="table table-borderless">
+        <tr>
+            <td style="border-bottom: 3px black !important"><img src="img/logo-bl.png" class="w-auto" style="height: 50px"></td>
+            <td style="border-bottom: 3px black !important"></td>
+            <td style="border-bottom: 3px black !important" class="text-right">{{ $item->tanggal_transfer }}</td>
+        </tr>
+
+        <tr>
+            <td>
+                From<br/>
+                <b>ICAE 2022</b><br/>
+                Jl. Ahmad Yani Batam Kota<br/>
+                Kota Batam, Kepulauan Riau<br/>
+                Indonesia<br/>
+                Phone: +62-778-469858<br/>
+                Ext.1017<br/>
+                Email: icae@polibatam.ac.id
+            </td>
+            <td>
+                To<br/>
+                {{ $item->user->name }}<br/>
+                {{ $item->user->email }}
+            </td>
+            <td>
+                @if($item->verification_status == 'Approved')
+                    Kwitansi
+                @else
+                    Invoice
+                @endif
+                 #{{ $item->id}}<br/>
+                <br/>
+                <b>Register As</b>: {{ $item->user->roles }}<br/>
+                <b>Register Date</b>: {{ $item->user->created_at->toDateString() }}
+            </td>
+        </tr>
+    </table>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>
+                    #ID EDAS
+                </td>
+                <td>
+                    Paper Code
+                </td>
+                <td>
+                    Title
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @forelse ($papers as $paper)
+            <tr>
+                <td>
+                    {{ $paper->user->edas_id }}
+                </td>
+                <td>
+                    {{ $paper->paper_code }}
+                </td>
+                <td>
+                    {{ $paper->paper_title }}
+                </td>
+            </tr>
+
+            @empty
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            @endforelse
+            
+        </tbody>
+    </table>
+    <br/>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>
+                    #ID EDAS
+                </td>
+                <td>
+                    Poster Code
+                </td>
+                <td>
+                    Title
+                </td>
+            </tr>
+            
+        </thead>
+        <tbody>
+            @forelse ($posters as $poster)
+            <tr>
+                <td>
+                    {{ $poster->user->edas_id }}
+                </td>
+                <td>
+                    {{ $poster->paper_code }}
+                </td>
+                <td>
+                    {{ $paper->paper_title }}
+                </td>
+            </tr>
+
+            @empty
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            @endforelse
+        </tbody>
+    </table>
+
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    This is Computer generated document.<br/>
+                    No Signatured Needed
+                </td>
+                <td>
+                    Subtotal: 
+                    @if ($item->user->roles == 'Indonesia Reguler' || $item->user->roles == 'Indonesia Student' || $item->user->roles == 'Poster Reguler' || $item->user->roles =='Poster Student' )
+                        Rp.
+
+                    @else
+                        USD
+                    @endif
+                    {{ $item->nominal_transfer }}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total: 
+                    @if ($item->user->roles == 'Indonesia Reguler' || $item->user->roles == 'Indonesia Student' || $item->user->roles == 'Poster Reguler' || $item->user->roles =='Poster Student' )
+                        Rp.
+
+                    @else
+                        USD
+                    @endif
+                    {{ $item->nominal_transfer }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
  
 </body>
 </html>
