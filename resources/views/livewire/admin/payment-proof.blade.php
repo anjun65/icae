@@ -61,7 +61,8 @@
                     <x-table.heading sortable multi-column wire:click="sortBy('nominal_transfer')" :direction="$sorts['nominal_transfer'] ?? null">Nominal Transfer</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('approval_status')" :direction="$sorts['approval_status'] ?? null">Approval Status</x-table.heading>
                     <x-table.heading sortable multi-column wire:click="sortBy('verification_status')" :direction="$sorts['verification_status'] ?? null">Verification Status</x-table.heading>
-                    
+                    <x-table.heading>File</x-table.heading>
+                    <x-table.heading>Invoice / Kwitansi</x-table.heading>
                     <x-table.heading />
                 </x-slot>
 
@@ -114,6 +115,11 @@
 
                         <x-table.cell>
                             <a target="_blank" href="{{ Storage::url($item->file) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Lihat</a>
+                        </x-table.cell>
+
+                        <x-table.cell>
+                            <a target="_blank" wire:click="invoice({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">@if($item->verification_status == 'Approved') Kwitansi @else Invoice @endif</a>
+                            
                         </x-table.cell>
 
                         <x-table.cell>
@@ -174,6 +180,12 @@
                 <x-input.group for="File" label="File">
                     <x-table.cell>
                         <a target="_blank" href="{{ Storage::url($editing->file) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Lihat</a>
+                    </x-table.cell>
+                </x-input.group>
+
+                <x-input.group for="File" label="Invoice/Kwitansi">
+                    <x-table.cell>
+                        <a target="_blank" wire:click="invoice({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">@if($item->verification_status == 'Approved') Kwitansi @else Invoice @endif</a>
                     </x-table.cell>
                 </x-input.group>
                 
