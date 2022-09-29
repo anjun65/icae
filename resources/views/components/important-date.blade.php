@@ -75,7 +75,7 @@
                             </div>
                         </td>
                         <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800"><div class="line-through">24 August 2022</div>30 September 2022</p>
+                            <p class="text-sm font-medium leading-none text-gray-800"><div class="line-through">24 August 2022</div>3 October 2022</p>
                         </td>
                     </tr>
 
