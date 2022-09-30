@@ -26,8 +26,19 @@
             All accepted papers will be presented in parallel sessions on October 5, 2022.
             <br/><b>Q&A sessions:</b><br/>
             Following the presentations, authors required to be on-line to address Q&A moderated by the Session Chair.
-
-            
+            <br/>
+            <br/>
+            <hr/>
+            <br/>
+            <p class="text-2xl pb-4 font-bold">
+                ICAE POWERPOINT TEMPLATES
+            </p>
+        
+            <p>
+                Listed below are the different versions of the ICAE PowerPoint Template that are available to download. Select the version of the template that is compatible with your system, or select the Zip Archive version to download all of them at once. The Office 97-2003 version is the most compatible version and should open in any recent version of PowerPoint.
+            </p>
+            <br/>
+            <a href="doc/Template ICAE 2022.pptx" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> Click For Download Powerpoint Template </a>
             {{-- <p class="mt-1 max-w-2xl text-sm text-gray-500">Batam, Indonesia</p> --}}
         </div>
     </div>
