@@ -185,7 +185,7 @@
 
                 <x-input.group for="File" label="Invoice/Kwitansi">
                     <x-table.cell>
-                        <a target="_blank" wire:click="invoice({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">@if($item->verification_status == 'Approved') Kwitansi @else Invoice @endif</a>
+                        <a target="_blank" wire:click="invoice({{ $editing->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">@if($editing->verification_status == 'Approved') Kwitansi @else Invoice @endif</a>
                     </x-table.cell>
                 </x-input.group>
                 

@@ -11,7 +11,7 @@
 
             @livewire('admin.poster')
 
-            {{-- @livewire('admin.payment-proof') --}}
+            @livewire('admin.payment-proof')
         </div>
     </main>
 
