@@ -31,7 +31,7 @@
             <p>
                 <b class="text-xl">List Schedule Parallel Session ICAE 2022 :</b><br/>
                 <br/>
-                <a href="doc/Jadwal parallel session ICAE 2022 V2.pdf" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> Click For Download Schedule Parallel Session </a>
+                <a href="doc/ICAE 2022 Parallel Session.pdf" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> Click For Download Schedule Parallel Session </a>
             </p>
         </div>
     </div>
