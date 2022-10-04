@@ -43,7 +43,7 @@ Universiti Brunei Darussalam</p>
 
       <div class="group relative">
         <div class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none rounded-full ring-2 ring-white">
-          <img src="img/speaker/Prof-YR-toga-sedada.JPG" class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+          <img src="img/speaker/Prof-YR-toga-sedada.jpg" class="w-full h-full object-center object-cover lg:w-full lg:h-full">
         </div>
         <div class="mt-4 text-center flex justify-between">
           <div class="w-full">
