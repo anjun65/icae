@@ -89,8 +89,8 @@
                         </x-table.cell>
 
                         <x-table.cell>
-                            <a target="_blank" wire:click="invoice({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">@if($item->verification_status == 'Approved') Kwitansi @else Invoice @endif</a>
-                            
+                            <a target="_blank" wire:click="invoice({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Invoice</a>
+                            @if($item->verification_status == 'Approved')<a target="_blank" wire:click="kwitansi({{ $item->id }})" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none "> Kwitansi </a> @else <a disabled="disabled" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Kwitansi</a>@endif
                         </x-table.cell>
                         
                         <x-table.cell>

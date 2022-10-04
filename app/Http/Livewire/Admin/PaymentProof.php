@@ -135,15 +135,8 @@ class PaymentProof extends Component
         $paper = Paper::where('user_id', $item->user_id)->get();
         $poster = Poster::where('user_id', $item->user_id)->get();
 
-        // dd($paper);
-        // $user = Paper::findorFail($item->user_id)->toArray();
-
-        if ($item->verification_status == 'Approved'){
-            $berkas = "Kwitansi";
-        }
-        else {
-            $berkas = "Invoice";
-        }
+        
+        $berkas = "Invoice";
 
         view()->share([
             'item'=> $item,
@@ -161,6 +154,34 @@ class PaymentProof extends Component
             $berkas."000".$item->id.".pdf"
         );
         
+    }
+
+    public function kwitansi($id) 
+    {
+        $item = Payment::findorFail($id);
+        if ($item->verification_status == 'Approved'){
+            
+            $paper = Paper::where('user_id', $item->user_id)->get();
+            $poster = Poster::where('user_id', $item->user_id)->get();
+
+            $berkas = "Kwitansi";
+
+            view()->share([
+                'item'=> $item,
+                'paper'=> $paper,
+                'poster'=> $poster,
+            ]);
+
+            $pdfContent = PDF::loadView('pdf.invoice',[
+                'item'=> $item,
+                'papers'=> $paper,
+                'posters'=> $poster,
+            ])->setPaper('a4', 'portrait')->output();
+            return response()->streamDownload(
+                fn () => print($pdfContent),
+                $berkas."000".$item->id.".pdf"
+            );
+        }
     }
 
     public function rejected($id)
