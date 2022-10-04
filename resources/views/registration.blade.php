@@ -39,7 +39,7 @@
                                     <li>SWIFT CODE : BSMDIDJA-PT Bank Syariah Indonesia tbk</li>
                                 </p>
                                 <br/>
-                                <p>3. The Registration link will be available 19 September 2021</p>
+                                <p>3. The Registration link will be available 19 September 2022</p>
                                 
                                 <a href="{{ route('register') }}" class="m-5 btn text-white">Registration Link</a>
                             </div>
