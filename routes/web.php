@@ -38,7 +38,7 @@ Route::get('/registration', function () {
 })->name('registration');
 
 Route::get('/404', function () {
-    return view('welcome');
+    return view('404');
 })->name('404');
 
 Route::middleware([
