@@ -37,9 +37,9 @@ Route::get('/registration', function () {
     return view('registration');
 })->name('registration');
 
-// Route::get('/404', function () {
-//     return view('404');
-// })->name('404');
+Route::get('/404', function () {
+    return view('welcome');
+})->name('404');
 
 Route::middleware([
     'auth:sanctum',
