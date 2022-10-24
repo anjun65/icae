@@ -123,6 +123,13 @@ class Users extends Component
         $this->showEditModal = false;
     }
 
+    public function exportSelected()
+    {
+        return response()->streamDownload(function () {
+            echo $this->selectedRowsQuery->toCsv();
+        }, 'users.csv');
+    }
+
     public function render()
     {
         return view('livewire.admin.users', [
