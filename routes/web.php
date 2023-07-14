@@ -13,54 +13,64 @@ use App\Http\Controllers\HomeController;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+    return view('home');
+})->name('home-2023');
 
-Route::get('/technical-program-committe', function () {
-    return view('committes');
-})->name('technical');
 
-Route::get('/local-committes', function () {
-    return view('local-committes');
-})->name('local');
+Route::prefix('2022')->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('home');
 
-Route::get('/accepted-paper', function () {
-    return view('accepted-paper');
-})->name('paper');
+    Route::get('/technical-program-committe', function () {
+        return view('committes');
+    })->name('technical');
 
-Route::get('/virtual-conference', function () {
-    return view('virtual-conference');
-})->name('conference');
+    Route::get('/local-committes', function () {
+        return view('local-committes');
+    })->name('local');
 
-Route::get('/registration', function () {
-    return view('registration');
-})->name('registration');
+    Route::get('/accepted-paper', function () {
+        return view('accepted-paper');
+    })->name('paper');
 
-Route::get('/404', function () {
-    return view('404');
-})->name('404');
+    Route::get('/virtual-conference', function () {
+        return view('virtual-conference');
+    })->name('conference');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/registration', function () {
+        return view('registration');
+    })->name('registration');
+
+    Route::get('/404', function () {
+        return view('404');
+    })->name('404');
+
+    Route::middleware([
+        'auth:sanctum',
+        config('jetstream.auth_session'),
+        'verified'
+    ])->group(function () {
+        Route::get('/dashboard', function () {
+            return view('dashboard');
+        })->name('dashboard');
+    });
+
+    Route::middleware([
+        'admin',
+        config('jetstream.auth_session'),
+        'verified'
+    ])->group(function () {
+        Route::get('admin/dashboard', function () {
+            return view('admin');
+        })->name('admin');
+
+        Route::get('admin/users', function () {
+            return view('users');
+        })->name('users');
+    });
 });
 
-Route::middleware([
-    'admin',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('admin/dashboard', function () {
-        return view('admin');
-    })->name('admin');
 
-    Route::get('admin/users', function () {
-        return view('users');
-    })->name('users');
-});
