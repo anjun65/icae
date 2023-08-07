@@ -292,7 +292,7 @@
           days: "00",
           distance: 0,
           countdown: null,
-          beerTime: new Date("Oct 8, 2023 00:00:00").getTime(),
+          beerTime: new Date("Nov 8, 2023 00:00:00").getTime(),
           now: new Date().getTime(),
           
           start: function () {
