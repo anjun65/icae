@@ -38,6 +38,9 @@
         >
             <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <div>
+                  
+                    <p class="text-center text-slate-600 my-3 sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 sm:text-base md:text-xl lg:mx-0">Politeknik Negeri Batam, Indonesia  - 8 November 2023</p>
+                    
                     <h1 class="text-4xl text-center tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
                        <span class="xl:inline">THE 6TH INTERNATIONAL</span><br/>
                        <span class="text-slate-600 xl:inline">CONFERENCE ON APPLIED</span> <br/>
