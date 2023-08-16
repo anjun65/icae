@@ -46,6 +46,10 @@
                        <span class="text-slate-600 xl:inline">CONFERENCE ON APPLIED</span> <br/>
                        <span class="text-slate-600 xl:inline">ENGINEERING (ICAE)</span>
                      </h1>
+
+                     <h2 class="pt-4 text-2xl text-center tracking-tight font-extrabold text-gray-900 sm:text-xl md:text-2xl">
+                       Harmonizing Green Economy, Sustainable<br/> Development, and Digitalization for a Thriving Future
+                     </h2>
                     
                     <div class="grid grid-cols-1 gap-4 m-8">
                         <div
@@ -89,6 +93,8 @@
                           </div>
                         </div>
                     </div>
+
+                    
 
                     {{-- <p class="hidden sm:block mt-6 max-w-2xl  text-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10 pointer-events-auto">RESPONSING THE METAVERSE ERA FOR FUTURE APPLIED TECHNOLOGY.</p> --}}
                     
