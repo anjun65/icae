@@ -21,9 +21,9 @@
         <a href="" class="text-sm font-semibold leading-6 text-gray-900">Accepted Paper & Poster</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      @guest
+      {{-- @guest
           <a href="{{ route('login') }}" class="lg:mx-auto text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-      @endguest
+      @endguest --}}
     
       
     </div>
