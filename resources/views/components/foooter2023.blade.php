@@ -7,7 +7,7 @@
                 <p class="mt-5 text-center text-sm leading-6 text-slate-500">
                     © 2023 Politeknik Negeri Batam. All rights reserved.<br/>
                     Batam Centre, Jl. Ahmad Yani, Tlk. Tering, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29461
-                    <br/> Email : icaess@polibatam.ac.id
+                    <br/> Email : icae@polibatam.ac.id
                 </p>
         </div>
     </footer>
