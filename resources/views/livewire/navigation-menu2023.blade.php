@@ -1,7 +1,7 @@
 <header x-data="{ open: false}" class="bg-white">
   <nav class="fixed z-30 w-full bg-white mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="{{ route('home') }}" class="-m-1.5 p-1.5 lg:mx-auto">
+      <a href="{{ route('home-2023') }}" class="-m-1.5 p-1.5 lg:mx-auto">
         <span class="sr-only">ICAE Polibatam</span>
         <img class="h-10 w-auto" src="{{ asset('img/logo-bl.png') }}" alt="ICAE Polibatam">
       </a>
@@ -16,7 +16,7 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       <div class="relative"></div>
-        <a href="{{ route('home') }}" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+        <a href="{{ route('home-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
         <a href="" class="text-sm font-semibold leading-6 text-gray-900">Committees</a>
         <a href="" class="text-sm font-semibold leading-6 text-gray-900">Accepted Paper & Poster</a>
     </div>
@@ -49,7 +49,7 @@
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="space-y-2 py-6">
             <div class="-mx-3">
-              <a href="{{ route('home') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
+              <a href="{{ route('home-2023') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
               {{-- <a href="{{ route('portofolio') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Portofolio</a>
               <a href="{{ route('contact') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</a>
               <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a> --}}
