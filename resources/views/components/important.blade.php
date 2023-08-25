@@ -35,7 +35,7 @@
                             </div>
                         </td>
                         <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800">31 August 2023</p>
+                            <p class="text-sm font-medium leading-none text-gray-800"><s>31 August 2023</s><br/>17 September 2023</p>
                         </td>
                     </tr>
 
@@ -48,7 +48,7 @@
                             </div>
                         </td>
                         <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800">30 September 2023</p>
+                            <p class="text-sm font-medium leading-none text-gray-800"><s>30 September 2023</s><br/> 1 October 2023</p>
                         </td>
                     </tr>
 
@@ -62,6 +62,19 @@
                         </td>
                         <td class="p-6">
                             <p class="text-sm font-medium leading-none text-gray-800">6 October 2023</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Final Manuscript & Payment</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="p-6">
+                            <p class="text-sm font-medium leading-none text-gray-800">15 October 2023 </p>
                         </td>
                     </tr>
 
