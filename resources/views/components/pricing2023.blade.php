@@ -7,15 +7,15 @@
           <dl class="grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 md:grid-cols-3 sm:p-8">
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">USD 200</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">for International Regular</dd>
+                    <dd class="text-gray-500">for International Regular</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Rp 2.750.000</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">for Indonesia Regular</dd>
+                    <dd class="text-gray-500">for Indonesia Regular</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Free</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">for Poster Regular</dd>
+                    <dd class="text-gray-500">for Poster Regular</dd>
                 </div>
           </dl>
 
@@ -23,11 +23,11 @@
                 
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Rp 500.000</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">for Student</dd>
+                    <dd class="text-gray-500">for Student</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Free</dt>
-                    <dd class="text-gray-500 dark:text-gray-400">for Participant</dd>
+                    <dd class="text-gray-500">for Participant</dd>
                 </div>
           </dl>
 
