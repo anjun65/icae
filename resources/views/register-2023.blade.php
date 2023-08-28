@@ -1,7 +1,7 @@
 <x-guest-layout-2023>
     <body class="antialiased bg-gray-100">
         <div class="relative items-top justify-center min-h-screen">
-            <div class="max-w-6xl mt-12 mx-auto sm:px-6 lg:px-8">
+            <div class="max-w-6xl mt-14 mx-auto sm:px-6 lg:px-8">
                 <br/>
                 <div class="bg-white">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">

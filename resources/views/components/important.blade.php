@@ -19,79 +19,79 @@
 
             <div class="card shadow-xl w-full lg:w-1/2">
                 <table class="w-full py-5">
-                <thead>
-                    <tr tabindex="0" class="focus:outline-none h-16 w-full text-sm leading-none bg-gray-50  text-gray-800">
-                        <th class="font-normal text-left pl-4">Event</th>
-                        <th class="font-normal text-left p-6">Date</th>
-                    </tr>
-                </thead>
-                <tbody class="w-full">
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Final Full Paper Submission</p>
+                    <thead>
+                        <tr tabindex="0" class="focus:outline-none h-16 w-full text-sm leading-none bg-gray-50  text-gray-800">
+                            <th class="font-normal text-left pl-4">Event</th>
+                            <th class="font-normal text-left p-6">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-full">
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
+                                        <p class="font-medium">Final Full Paper Submission</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800"><s>31 August 2023</s><br/>17 September 2023</p>
-                        </td>
-                    </tr>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800"><s>31 August 2023</s><br/>17 September 2023</p>
+                            </td>
+                        </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Registration and Payment</p>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
+                                        <p class="font-medium">Registration and Payment</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800"><s>30 September 2023</s><br/> 1 October 2023</p>
-                        </td>
-                    </tr>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800"><s>30 September 2023</s><br/> 1 October 2023</p>
+                            </td>
+                        </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Camera Ready and Final Revision</p>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
+                                        <p class="font-medium">Camera Ready and Final Revision</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800">6 October 2023</p>
-                        </td>
-                    </tr>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800">6 October 2023</p>
+                            </td>
+                        </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Final Manuscript & Payment</p>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
+                                        <p class="font-medium">Final Manuscript & Payment</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800">15 October 2023 </p>
-                        </td>
-                    </tr>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800">15 October 2023 </p>
+                            </td>
+                        </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Conference Day</p>
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
+                                        <p class="font-medium">Conference Day</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td class="p-6">
-                            <p class="text-sm font-medium leading-none text-gray-800">7-8 November 2023</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800">7-8 November 2023</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
