@@ -17,7 +17,9 @@
     <div class="hidden lg:flex lg:gap-x-12">
       <div class="relative"></div>
         <a href="{{ route('home-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-        <a href="{{ route('committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Committees</a>
+        <a href="{{ route('tech-committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Technical Committees</a>
+        <a href="{{ route('committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Organizing Committees</a>
+        
         <a href="{{ route('register-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Registration</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -50,7 +52,8 @@
           <div class="space-y-2 py-6">
             <div class="-mx-3">
               <a href="{{ route('home-2023') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-              <a href="{{ route('committees-2023') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Committees</a>
+              <a href="{{ route('tech-committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Technical Committees</a>
+              <a href="{{ route('committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Organizing Committees</a>
               <a href="{{ route('register-2023') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Registration</a>
               {{-- <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a> --}}
           </div>

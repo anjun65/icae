@@ -18,9 +18,13 @@ Route::get('/', function () {
     return view('home');
 })->name('home-2023');
 
-Route::get('/committees', function () {
+Route::get('/organizing-committees', function () {
     return view('local-committes-2023');
 })->name('committees-2023');
+
+Route::get('/technical-committees', function () {
+    return view('tech-committes-2023');
+})->name('tech-committees-2023');
 
 Route::get('/registration', function () {
     return view('register-2023');

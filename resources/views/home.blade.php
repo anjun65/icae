@@ -5,6 +5,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                  <x-about2023/>
                  <x-important/>
+                 <x-speaker-2023/>
                  <x-pricing2023/>
             </div>
         </div>
