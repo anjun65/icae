@@ -7,7 +7,7 @@
             
             <div class="w-full lg:w-1/2">
                 <h1 class="py-4 text-2xl font-extrabold text-gray-800">Submission Type: Full Paper</h1>
-                {{-- <p class="py-4 text-base text-gray-800">Please download the template paper here: <a href="doc/EAI-Proceedings-DOCX-Template_2023_Oke_ICAESS.docx"><b>EAI-Proceedings-DOCX-Template_2023_Oke_ICAESS.docx</b></a> --}}
+                    <p class="py-4 text-base text-gray-800">Please download the template paper here: <a href="doc/EAI-Proceedings-DOCX-Template_2023_Oke_ICAE.docx"><b>EAI-Proceedings-DOCX-Template_2023_Oke_ICAE.docx</b></a>
     
                     <p class="py-4 text-base text-gray-800"><b>ONLINE SUBMISSION FULL PAPER/POSTER</b> via <b><a href="https://edas.info/newPaper.php?c=31409" target="_blank" >EDAS <span aria-hidden="true">→</span></a> </b></p>
                     
