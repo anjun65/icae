@@ -17,7 +17,7 @@
                   <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
                     <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="{{ asset('img/speaker/Dr MK Radhakrishnan.jpg') }}" alt="Speaker">
                     <h1 class="text-lg text-gray-700">Dr MK Radhakrishnan</h1>
-                    <h3 class="text-sm text-gray-400 ">NanoRel - LLP Technical Consultant, Spore / VP IEEE EDS<br/><span class="text-red-600">* currently in the confirmation stage</span></h3>
+                    <h3 class="text-sm text-gray-400 ">NanoRel - LLP Technical Consultant, Spore / VP IEEE EDS</h3>
 
                   </div>
                 </div>

@@ -14,7 +14,7 @@
                     <dd class="text-gray-500">for Indonesia Regular</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl font-extrabold">Free</dt>
+                    <dt class="mb-2 text-3xl font-extrabold">Rp 500.000</dt>
                     <dd class="text-gray-500">for Poster Regular</dd>
                 </div>
           </dl>
@@ -26,7 +26,7 @@
                     <dd class="text-gray-500">for Student</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
-                    <dt class="mb-2 text-3xl font-extrabold">Free</dt>
+                    <dt class="mb-2 text-3xl font-extrabold">Rp 500.000</dt>
                     <dd class="text-gray-500">for Participant</dd>
                 </div>
           </dl>
