@@ -61,68 +61,6 @@
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">Chair ICAESS</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Yulinda</p>
-                        </td>
-                    </tr>
-
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Chief Editor ICAESS</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Sugeng Riadi</p>
-                        </td>
-                    </tr>
-
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Editor Team  ICAESS</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Dedi Kurniawan</p>
-                            <p class="text-sm font-medium  text-gray-800">Vina Kholisa Dinuka</p>
-                            <p class="text-sm font-medium  text-gray-800">Andi Erna Mulyana</p>
-                            <p class="text-sm font-medium  text-gray-800">Jessica Olifia</p>
-                            <p class="text-sm font-medium  text-gray-800">Rizki Lanniari HS</p>
-                            <p class="text-sm font-medium  text-gray-800">Fuad Arif Rahman</p>
-                            <p class="text-sm font-medium  text-gray-800">Mia Syafrina</p>
-                            <p class="text-sm font-medium  text-gray-800">Muhammad Ikhlash</p>
-                            <p class="text-sm font-medium  text-gray-800">Desi Ratna Sari</p>
-                            <p class="text-sm font-medium  text-gray-800">Fandy Bestario Harlan</p>
-                        </td>
-                    </tr>
-
-
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
-                                    <p class="font-medium">Chair Poster ICAESS</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Muhammad Ramadhan Slamet</p>
-                        </td>
-                    </tr>
-
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
-                        <td class="pl-4 cursor-pointer">
-                            <div class="flex items-center">
-                                <div>
                                     <p class="font-medium">Conference Organising Committee</p>
                                 </div>
                             </div>
