@@ -15,7 +15,7 @@
             >
               <div class="">
                 <div
-                  class="text-xl text-center text-white flex md:w-full"
+                  class="text-xl text-center text-white flex w-full"
                 >
                   <div class="w-18 md:w-24 mx-1 p-2 bg-gray-500 rounded-lg">
                     <div x-text="days">00</div>

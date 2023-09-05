@@ -5070,10 +5070,6 @@ body[dir="rtl"] .checkbox:checked,
     height: 18rem;
   }
 
-  .sm\:max-h-full {
-    max-height: 100%;
-  }
-
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -5354,6 +5350,10 @@ body[dir="rtl"] .checkbox:checked,
     min-height: 100vh;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-24 {
     width: 6rem;
   }
@@ -5511,6 +5511,10 @@ body[dir="rtl"] .checkbox:checked,
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-24 {
+    width: 6rem;
   }
 
   .lg\:max-w-2xl {
