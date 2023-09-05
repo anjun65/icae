@@ -1,5 +1,5 @@
 <section class="h-full">
-    <div class="py-8 px-4 mx-auto max-h-screen max-w-screen-xl text-center lg:py-16 lg:px-12">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <div class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-slate-700 rounded-full dark:bg-gray-800 dark:text-white" role="alert">
             <span class="text-medium  rounded-full text-white px-4 py-1.5">Politeknik Negeri Batam, Indonesia  - 8 November 2023</span> 
         </div>
