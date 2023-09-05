@@ -29,7 +29,8 @@
                         
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white hover:bg-gray-100 border-b border-t border-gray-100">
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
@@ -38,11 +39,12 @@
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Hanifah Widiastuti, Ph.D</p>
+                            <p class="text-sm font-medium  text-gray-800">Andy Triwinarko</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 bg-white hover:bg-gray-100 border-b border-t border-gray-100">
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
@@ -51,118 +53,227 @@
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Nur Zahrati Janah, M.Sc</p>
-                            <p class="text-sm font-medium  text-gray-800">Cici Akmalita, A.Md</p>
-                            <p class="text-sm font-medium  text-gray-800">Elvira Purbaningtyas, S.H</p>
+                            <p class="text-sm font-medium  text-gray-800">Alrido Martha Devano</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 bg-white  hover:bg-gray-100 border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">Finance</p>
+                                    <p class="font-medium">Chair ICAESS</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Basariah Sitorus, S.ST</p>
-                            <p class="text-sm font-medium  text-gray-800">Anjelina, M.A</p>
-                            <p class="text-sm font-medium  text-gray-800">Novita Angelina, S.ST</p>
+                            <p class="text-sm font-medium  text-gray-800">Yulinda</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white  hover:bg-gray-100  border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">ICAE Technical<br/>Program Committee<br/>Co-Chairs</p>
+                                    <p class="font-medium">Chief Editor ICAESS</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Widya Rika Puspita, Ph.D</p>
-                            <p class="text-sm font-medium  text-gray-800">Dwi Ely Kurniawan, S.Pd., M.Kom</p>
-                            <p class="text-sm font-medium  text-gray-800">Novita Angelina, S.ST</p>
-                            <p class="text-sm font-medium  text-gray-800">Adhe Aryswan, S.Pd., M.Si.</p>
-                            <p class="text-sm font-medium  text-gray-800">Muchamad Fajri Amirul<br/> Nasrullah, S.ST., M.Sc</p>
+                            <p class="text-sm font-medium  text-gray-800">Sugeng Riadi</p>
                         </td>
                     </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Editor Team  ICAESS</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            <p class="text-sm font-medium  text-gray-800">Dedi Kurniawan</p>
+                            <p class="text-sm font-medium  text-gray-800">Vina Kholisa Dinuka</p>
+                            <p class="text-sm font-medium  text-gray-800">Andi Erna Mulyana</p>
+                            <p class="text-sm font-medium  text-gray-800">Jessica Olifia</p>
+                            <p class="text-sm font-medium  text-gray-800">Rizki Lanniari HS</p>
+                            <p class="text-sm font-medium  text-gray-800">Fuad Arif Rahman</p>
+                            <p class="text-sm font-medium  text-gray-800">Mia Syafrina</p>
+                            <p class="text-sm font-medium  text-gray-800">Muhammad Ikhlash</p>
+                            <p class="text-sm font-medium  text-gray-800">Desi Ratna Sari</p>
+                            <p class="text-sm font-medium  text-gray-800">Fandy Bestario Harlan</p>
+                        </td>
+                    </tr>
+
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Chair Poster ICAESS</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            <p class="text-sm font-medium  text-gray-800">Muhammad Ramadhan Slamet</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Conference Organising Committee</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            
+                            <p class="text-sm font-medium  text-gray-800">Ria Anggraini</p>
+                            <p class="text-sm font-medium  text-gray-800">Winanda Wahana Warga Dalam</p>
+                            <p class="text-sm font-medium  text-gray-800">Riyadi Aprayuda</p>
+                            <p class="text-sm font-medium  text-gray-800">Mutia Ulfah</p>
+                            <p class="text-sm font-medium  text-gray-800">Nadia Fathurrahmi Lawita</p>
+                            <p class="text-sm font-medium  text-gray-800">Muhammad Zainuddin</p>
+                            <p class="text-sm font-medium  text-gray-800">Allif Maulana</p>
+                            <p class="text-sm font-medium  text-gray-800">Widya Rika Puspita</p>
+                            <p class="text-sm font-medium  text-gray-800">Nadhrah Wivanius</p>
+                            <p class="text-sm font-medium  text-gray-800">Fitriyanti Nakul</p>
+                            <p class="text-sm font-medium  text-gray-800">Elin Aprilia</p>
+                            <p class="text-sm font-medium  text-gray-800">Mu'thiana Gusnam</p>
+                            <p class="text-sm font-medium  text-gray-800">Rizky Sapriadi</p>
+                            <p class="text-sm font-medium  text-gray-800">Domi Kamsyah</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">ICAE Chair Scope Machine</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            
+                            <p class="text-sm font-medium  text-gray-800">Aulia Fajrin</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">ICAE Chair Team Scope Machine</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            
+                            <p class="text-sm font-medium text-gray-800">Mega Gemala</p>
+                            <p class="text-sm font-medium text-gray-800">Nurul Laili Arifin</p>
+                            <p class="text-sm font-medium text-gray-800">Veryawan Nanda Perkasa</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">ICAE Chair Scope Machine</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            
+                            <p class="text-sm font-medium  text-gray-800">Aulia Fajrin</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">Chief Editor ICAE Scope Machine</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            
+                            <p class="text-sm font-medium text-gray-800">Adi Syahputra Purba</p>
+                        </td>
+                    </tr>
+
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                        <td class="pl-4 cursor-pointer">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-medium">ICAE Editor Team Scope Machine</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="pl-12">
+                            <p class="text-sm font-medium text-gray-800">Windy Stefani</p>
+                            <p class="text-sm font-medium text-gray-800">Ninda Hardina Batubara</p>
+                            <p class="text-sm font-medium text-gray-800">Hendra Butar Butar</p>
+                        </td>
+                    </tr>
+
                     
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white  hover:bg-gray-100  border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">ICAESS Technical<br/>Program Committee<br/>Co-Chairs</p>
+                                    <p class="font-medium">ICAE Chair Scope Informatics</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Arniati, M.Si, Ak, Ph.D</p>
-                            <p class="text-sm font-medium  text-gray-800">Ria Anggraeni, MBA</p>
-                            <p class="text-sm font-medium  text-gray-800">Maryani Septiana,S.Sos., M.Hum</p>
-                            <p class="text-sm font-medium  text-gray-800">Vina Kholisa Dinuka, S.E., M.Sc</p>
-                            <p class="text-sm font-medium  text-gray-800">Dedi Kurniawan, S.Tr.Akun., M.Acc</p>
-                            <p class="text-sm font-medium  text-gray-800">Andi Erna Mulyana, M.Sc</p>
-                            <p class="text-sm font-medium  text-gray-800">Jessica Olifia, M.Log.</p>
+                            
+                            <p class="text-sm font-medium text-gray-800">Nur Cahyono Kushardianto</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white  hover:bg-gray-100  border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">Public Relations<br/>Co-Chairs</p>
+                                    <p class="font-medium">ICAE Chief Editor Scope Informatics</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Nur Rahmah Andayani, M.Si</p>
-                            <p class="text-sm font-medium  text-gray-800">Muhammad Ismet Lau, S.Tr.Kom</p>
-                            <p class="text-sm font-medium  text-gray-800">Heru Satria Budi</p>
-                            <p class="text-sm font-medium  text-gray-800">Handy Yoga Raharja, S.IP</p>
-                            <p class="text-sm font-medium  text-gray-800">Adhitomo Wirawan, S.ST., M.BA</p>
-                            <p class="text-sm font-medium  text-gray-800">M. Ikhlas</p>
-                            <p class="text-sm font-medium  text-gray-800">M. Zaenuddin</p>
+                            
+                            <p class="text-sm font-medium text-gray-800">Dwi Ely Kurniawan</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white  hover:bg-gray-100  border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">Social Media and<br/> Web Master</p>
+                                    <p class="font-medium">ICAE Editor Team Scope Informatics</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Hamdani Arif., S.Pd., M.Sc</p>
-                            <p class="text-sm font-medium  text-gray-800">Banu Failasuf, S.Tr.Kom</p>
-                            <p class="text-sm font-medium  text-gray-800">Hajrul Khaira, S.Tr.Kom</p>
+                            <p class="text-sm font-medium text-gray-800">Ahmadi Irmansyah Lubis</p>
+                            <p class="text-sm font-medium text-gray-800">Noper Ardi</p>
+                            <p class="text-sm font-medium text-gray-800">Metta Santiputri</p>
                         </td>
                     </tr>
 
-                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800  bg-white  hover:bg-gray-100  border-b border-t border-gray-100 ">
+                    <tr tabindex="0" class="focus:outline-none h-20 text-sm  text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
                         <td class="pl-4 cursor-pointer">
                             <div class="flex items-center">
                                 <div>
-                                    <p class="font-medium">Conference Organising<br/>Committee</p>
+                                    <p class="font-medium">Web Management</p>
                                 </div>
                             </div>
                         </td>
                         <td class="pl-12">
-                            <p class="text-sm font-medium  text-gray-800">Nur Sakinah Asaad, M.T</p>
-                            <p class="text-sm font-medium  text-gray-800">Irkham Nugroho Putro, S.A.P</p>
-                            <p class="text-sm font-medium  text-gray-800">Gendhy Dwi Harlyan, S.Sn.,M.Sn</p>
-                            <p class="text-sm font-medium  text-gray-800">Mia Syafrina, S.Pd., M.Si.</p>
-                            <p class="text-sm font-medium  text-gray-800">Mira Chandra Kirana, S.T., M.T</p>
-                            <p class="text-sm font-medium  text-gray-800">Priki Adimarta, S.ST</p>
-                            <p class="text-sm font-medium  text-gray-800">Firmal</p>
-                            <p class="text-sm font-medium  text-gray-800">Yusran</p>
-                            <p class="text-sm font-medium  text-gray-800">Fatahillah Rangkuti</p>
-                            <p class="text-sm font-medium  text-gray-800">Gilli A. Syahfrudin</p>
-                            <p class="text-sm font-medium  text-gray-800">Nur Hidayat</p>
-                            <p class="text-sm font-medium  text-gray-800">Diono</p>
+                            <p class="text-sm font-medium text-gray-800">Hamdani Arif</p>
+                            <p class="text-sm font-medium text-gray-800">Hajrul Khaira</p>
                         </td>
                     </tr>
 
