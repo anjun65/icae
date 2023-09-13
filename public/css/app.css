@@ -3591,9 +3591,6 @@ body[dir="rtl"] .checkbox:checked,
 .h-32 {
   height: 8rem;
 }
-.max-h-screen {
-  max-height: 100vh;
-}
 .max-h-60 {
   max-height: 15rem;
 }
@@ -5350,10 +5347,6 @@ body[dir="rtl"] .checkbox:checked,
     min-height: 100vh;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:w-24 {
     width: 6rem;
   }
@@ -5511,10 +5504,6 @@ body[dir="rtl"] .checkbox:checked,
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-24 {
-    width: 6rem;
   }
 
   .lg\:max-w-2xl {

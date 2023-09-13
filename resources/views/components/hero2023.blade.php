@@ -1,7 +1,7 @@
 <section class="h-full">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <div class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-slate-700 rounded-full dark:bg-gray-800 dark:text-white" role="alert">
-            <span class="text-medium  rounded-full text-white px-4 py-1.5">Politeknik Negeri Batam, Indonesia  - 8 November 2023</span> 
+            <span class="text-medium  rounded-full text-white px-4 py-1.5">Politeknik Negeri Batam, Indonesia  - 7 November 2023</span> 
         </div>
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">THE 6TH INTERNATIONAL <br/>CONFERENCE ON APPLIED ENGINEERING (ICAE)</h1>
         
@@ -152,7 +152,7 @@
           days: "00",
           distance: 0,
           countdown: null,
-          beerTime: new Date("Nov 8, 2023 00:00:00").getTime(),
+          beerTime: new Date("Nov 7, 2023 00:00:00").getTime(),
           now: new Date().getTime(),
           
           start: function () {
