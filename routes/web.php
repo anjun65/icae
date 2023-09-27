@@ -30,13 +30,31 @@ Route::get('/registration', function () {
     return view('register-2023');
 })->name('register-2023');
 
-Route::get('/login', function () {
-    return view('404');
-})->name('login');
 
-Route::get('/register', function () {
-    return view('404');
-})->name('register');
+Route::middleware([
+        'auth:sanctum',
+        config('jetstream.auth_session'),
+        'verified'
+    ])->group(function () {
+        Route::get('/dashboard', function () {
+            return view('dashboard');
+        })->name('dashboard');
+    });
+    
+    Route::middleware([
+        'admin',
+        config('jetstream.auth_session'),
+        'verified'
+    ])->group(function () {
+        Route::get('admin/dashboard', function () {
+            return view('admin');
+        })->name('admin');
+
+        Route::get('admin/users', function () {
+            return view('users');
+        })->name('users');
+    });
+
 
 
 
@@ -69,29 +87,29 @@ Route::prefix('2022')->group(function () {
         return view('404');
     })->name('404');
 
-    Route::middleware([
-        'auth:sanctum',
-        config('jetstream.auth_session'),
-        'verified'
-    ])->group(function () {
-        Route::get('/dashboard', function () {
-            return view('dashboard');
-        })->name('dashboard');
-    });
+    // Route::middleware([
+    //     'auth:sanctum',
+    //     config('jetstream.auth_session'),
+    //     'verified'
+    // ])->group(function () {
+    //     Route::get('/dashboard', function () {
+    //         return view('dashboard');
+    //     })->name('dashboard');
+    // });
 
-    Route::middleware([
-        'admin',
-        config('jetstream.auth_session'),
-        'verified'
-    ])->group(function () {
-        Route::get('admin/dashboard', function () {
-            return view('admin');
-        })->name('admin');
+    // Route::middleware([
+    //     'admin',
+    //     config('jetstream.auth_session'),
+    //     'verified'
+    // ])->group(function () {
+    //     Route::get('admin/dashboard', function () {
+    //         return view('admin');
+    //     })->name('admin');
 
-        Route::get('admin/users', function () {
-            return view('users');
-        })->name('users');
-    });
+    //     Route::get('admin/users', function () {
+    //         return view('users');
+    //     })->name('users');
+    // });
 });
 
 
