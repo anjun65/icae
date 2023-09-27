@@ -55,9 +55,6 @@ Route::middleware([
         })->name('users');
     });
 
-
-
-
 Route::prefix('2022')->group(function () {
     Route::get('/', function () {
         return view('welcome');

@@ -15,7 +15,7 @@
         <tr>
             <td>
                 From<br/>
-                <b>ICAE 2023</b><br/>
+                <b>ICAE 2022</b><br/>
                 Jl. Ahmad Yani Batam Kota<br/>
                 Kota Batam, Kepulauan Riau<br/>
                 Indonesia<br/>
@@ -161,18 +161,8 @@
                         USD
                     @endif
                     {{ $item->nominal_transfer }}
-                    @if($item->verification_status == 'Approved')
-                        <br/>
-                        <img src="img/icae-stempel.png" class="w-auto" style="height: 80px">
-                        <br/>
-                        Panitia ICAE 2023
-                    @endif
                 </td>
             </tr>
-
-
-
-            
         </tbody>
     </table>
  
