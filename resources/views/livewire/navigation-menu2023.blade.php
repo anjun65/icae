@@ -26,7 +26,10 @@
       @guest
           <a href="{{ route('login') }}" class="lg:mx-auto text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
       @endguest
-    
+      
+      @auth
+          <a href="{{ route('dashboard') }}" class="lg:mx-auto text-sm font-semibold leading-6 text-gray-900">Dashboard <span aria-hidden="true">&rarr;</span></a>
+      @endauth
       
     </div>
   </nav>
@@ -56,7 +59,11 @@
               <a href="{{ route('committees-2023') }}" class="text-sm font-semibold leading-6 text-gray-900">Organizing Committees</a>
               <a href="{{ route('register-2023') }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Registration</a>
               <a href="{{ route('login') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
-          </div>
+          
+              @auth
+                <a href="{{ route('dashboard') }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Dashboard</a>
+              @endauth
+            </div>
         </div>
       </div>
     </div>

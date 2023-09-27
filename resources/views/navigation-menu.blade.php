@@ -17,7 +17,7 @@
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
 
-                    <x-jet-nav-link href="{{ route('home') }}">
+                    <x-jet-nav-link href="{{ route('home-2023') }}">
                         {{ __('Home') }}
                     </x-jet-nav-link>
                 </div>
