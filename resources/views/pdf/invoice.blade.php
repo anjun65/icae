@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Membuat Laporan PDF Dengan DOMPDF Laravel</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
@@ -137,8 +136,8 @@
         <tbody>
             <tr>
                 <td rowspan="2">
-                    This is Computer generated document.<br/>
-                    No Signatured Needed
+                    <i>This is Computer generated document.</i><br/>
+                    
                 </td>
                 <td>
                     Subtotal: 
@@ -163,9 +162,11 @@
                     {{ $item->nominal_transfer }}
                     @if($item->verification_status == 'Approved')
                         <br/>
-                        <img src="img/icae-stempel.png" class="w-auto" style="height: 80px">
+                        <img src="img/icae-stempel.png" class="ml-1 mt-3 w-auto position-absolute" style="height: 80px">
                         <br/>
-                        Panitia ICAE 2023
+                        <img src="img/ttd-bendahara.png" class="w-auto" style="height: 80px">
+                        <br/>
+                        Bendahara ICAE 2023
                     @endif
                 </td>
             </tr>
