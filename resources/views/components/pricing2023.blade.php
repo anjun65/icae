@@ -19,11 +19,15 @@
                 </div>
           </dl>
 
-          <dl class="grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 md:grid-cols-2 sm:p-8">
-                
+          <dl class="grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 md:grid-cols-3 sm:p-8">
+                    <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">USD 125</dt>
+                    <dd class="text-gray-500">for International Student</dd>
+                </div>
+
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Rp 500.000</dt>
-                    <dd class="text-gray-500">for Student</dd>
+                    <dd class="text-gray-500">for Indonesia Student</dd>
                 </div>
                 <div class="flex flex-col items-center justify-center">
                     <dt class="mb-2 text-3xl font-extrabold">Rp 500.000</dt>
