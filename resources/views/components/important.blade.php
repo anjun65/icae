@@ -35,7 +35,7 @@
                                 </div>
                             </td>
                             <td class="p-6">
-                                <p class="text-sm font-medium leading-none text-gray-800"><s>31 August 2023</s><br/><s>17 September 2023</s><br/>30 September 2023</p>
+                                <p class="text-sm font-medium leading-none text-gray-800"><s>31 August 2023</s><br/><s>17 September 2023</s><br/><s>30 September 2023</s><br/>10 October 2023</p>
                             </td>
                         </tr>
 
@@ -48,7 +48,7 @@
                                 </div>
                             </td>
                             <td class="p-6">
-                                <p class="text-sm font-medium leading-none text-gray-800">15 October 2023 </p>
+                                <p class="text-sm font-medium leading-none text-gray-800"><s>15 October 2023</s> <br/>24 October 2023</p>
                             </td>
                         </tr>
 
