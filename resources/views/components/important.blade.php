@@ -56,6 +56,19 @@
                             <td class="pl-4 cursor-pointer">
                                 <div class="flex items-center">
                                     <div>
+                                        <p class="font-medium">Final Revision</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-6">
+                                <p class="text-sm font-medium leading-none text-gray-800">1 November 2023</p>
+                            </td>
+                        </tr>
+
+                        <tr tabindex="0" class="focus:outline-none h-20 text-sm leading-none text-gray-800 hover:bg-gray-100 border-b border-t border-gray-100">
+                            <td class="pl-4 cursor-pointer">
+                                <div class="flex items-center">
+                                    <div>
                                         <p class="font-medium">Conference Day</p>
                                     </div>
                                 </div>
@@ -64,6 +77,7 @@
                                 <p class="text-sm font-medium leading-none text-gray-800">7 November 2023</p>
                             </td>
                         </tr>
+                        
                     </tbody>
                 </table>
             </div>
