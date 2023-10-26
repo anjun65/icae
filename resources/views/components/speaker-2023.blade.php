@@ -9,7 +9,7 @@
                   <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
                     <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="{{ asset('img/speaker/Dr.Ir. Basuki Rahmatul Alam.jpg') }}" alt="Speaker">
                     <h1 class="text-lg text-gray-700">Dr.Ir. Basuki Rahmatul Alam</h1>
-                    <h3 class="text-sm text-gray-400 ">Retired ITB lecturer/ founder TFME/ Polibatam lecturer / Senior Member IEEE</h3>
+                    <h3 class="text-sm text-gray-400 ">Founder TFME PoliBatam /  Chair of IEEE EDS Indonesia  Chapter/ IEEE Senior Member / Lecturer of Manufacturing Electronics of PoliBatam</h3>
 
                   </div>
                 </div>
@@ -17,7 +17,7 @@
                   <div class="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
                     <img class="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="{{ asset('img/speaker/Dr MK Radhakrishnan.jpg') }}" alt="Speaker">
                     <h1 class="text-lg text-gray-700">Dr MK Radhakrishnan</h1>
-                    <h3 class="text-sm text-gray-400 ">NanoRel - LLP Technical Consultant, Spore / VP IEEE EDS</h3>
+                    <h3 class="text-sm text-gray-400 ">NanoRel - LLP Technical Consultant, Spore / VP IEEE EDS <br/><br/><br/><br/></h3>
 
                   </div>
                 </div>
